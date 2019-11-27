@@ -15,7 +15,7 @@ https://pxweb.stat.si/SiStatDb/pxweb/sl/10_Dem_soc/10_Dem_soc__07_trg_dela__30_0
 2. tabela : Delovno aktivno prebivalstvo glede na dejavnosti 
 https://pxweb.stat.si/SiStatDb/pxweb/sl/10_Dem_soc/10_Dem_soc__07_trg_dela__02_07008_akt_preb_po_anketi__01_07620_akt_preb_ADS_cetrt/0762005S.px/
 
-3. tabela : Prebivalci glede na aktivnost (aktivni, neaktivni, brezposelni)  
+3. tabela : Prebivalci glede na aktivnost (aktivni, neaktivni, brezposelni), po spolu in kohezijskih regijah (Vzhodna in Zahodna Slovenija)  
 https://pxweb.stat.si/SiStatDb/pxweb/sl/10_Dem_soc/10_Dem_soc__07_trg_dela__02_07008_akt_preb_po_anketi__01_07620_akt_preb_ADS_cetrt/0762001S.px/
 
 4. tabela : Povprečne mesečne plače po dejavnostih (bruto plače)  
