@@ -7,9 +7,12 @@ Repozitorij z gradivi pri predmetu APPR v študijskem letu 2019/20
 
 ## Analiza trga dela v Sloveniji
 
-V projektni nalogi bom analizira trg dela v Sloveniji s pomočjo dejavnikov, ki vplivajo nanj. Osredotočila se bom na obdobje od leta 2008 do leta 2018. Najprej bom analizirala delovno aktivno prebivalstvo, brezposelno prebivalstvo ter prosta mesta. V nadaljevanju pa se dotaknila še plač. Cilj naloge je predstaviti stanje na trgu dela v zadnjem desetletju. Podatke bom poiskala na Statističnem uradu Republike Slovenije.
+V projektni nalogi bom analizira trg dela v Sloveniji s pomočjo dejavnikov, ki vplivajo nanj. Osredotočila se bom na obdobje od leta 2008 do leta 2018. Analizirala bom delovno aktivno prebivalstvo, brezposelno prebivalstvo ter prosta mesta. V nadaljevanju pa se dotaknila še plač. Cilj naloge je predstaviti stanje na trgu dela v zadnjem desetletju. Podatke bom poiskala na Statističnem uradu Republike Slovenije ter na Eurostatu. 
 
-1. tabela: Prosta delovna mesta glede na dejavnosti 
+Najprej bom analizirala prosta delovna mesta glede na dejavnosti ter delovno aktivno prebivalstvo glede na dejavnosti, saj se temi povezujeta. Tako bom dobila povezavo med dejavnostimi, ki imajo malo prostih mest ter veliko delovno aktivnih. Podatke bom primerjala še z mesečnimi plačami na dejavnost. Poslednično bom dobila pregled dejavnosti v Sloveniji, v katerih je prebivalstvo v  večini zaposleno in se vprašala o razlogih kot so npr. plače. 
+V nadaljevanju bom dodala še pregled aktivnega prebivalstva ( koliko jih je zaposlenih in brezposlenih) in  pregled neaktivnega prebivalstva glede na razloge ne dela. 
+
+1. tabela: Prosta in zasedena delovna mesta glede na dejavnosti 
 https://pxweb.stat.si/SiStatDb/pxweb/sl/10_Dem_soc/10_Dem_soc__07_trg_dela__30_07146_prosta_mesta/0714611S.px/
 
 2. tabela : Delovno aktivno prebivalstvo glede na dejavnosti 
