@@ -16,7 +16,7 @@ V nadaljevanju bom dodala še pregled aktivnega prebivalstva ( koliko jih je zap
 https://pxweb.stat.si/SiStatDb/pxweb/sl/10_Dem_soc/10_Dem_soc__07_trg_dela__30_07146_prosta_mesta/0714611S.px/
 
 2. tabela : Delovno aktivno prebivalstvo glede na dejavnosti 
-https://pxweb.stat.si/SiStatDb/pxweb/sl/10_Dem_soc/10_Dem_soc__07_trg_dela__02_07008_akt_preb_po_anketi__01_07620_akt_preb_ADS_cetrt/0762005S.px/
+https://pxweb.stat.si/SiStatDb/pxweb/sl/10_Dem_soc/10_Dem_soc__07_trg_dela__06_akt_preb_reg_viri_strukturni__10_07754_dejavnost/0775401S.px/ 
 
 3.tabela : Delovno aktivni po glavnih poklicnih skupinah, spolu
 https://pxweb.stat.si/SiStatDb/pxweb/sl/10_Dem_soc/10_Dem_soc__07_trg_dela__02_07008_akt_preb_po_anketi__02_07621_akt_preb_ADS_letno/0762106S.px/
