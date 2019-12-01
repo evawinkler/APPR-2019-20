@@ -27,7 +27,8 @@ https://pxweb.stat.si/SiStatDb/pxweb/sl/10_Dem_soc/10_Dem_soc__07_trg_dela__02_0
 5. tabela : Povprečne mesečne plače  pri registriranih fizičnih osebah po dejavnostih
 https://pxweb.stat.si/SiStatDb/pxweb/sl/10_Dem_soc/10_Dem_soc__07_trg_dela__10_place__01_07010_place/0701070S.px/
  
-
+6. tabela: Povprečne mesečne plače po statističnih regijah
+https://pxweb.stat.si/SiStatDb/pxweb/sl/10_Dem_soc/10_Dem_soc__07_trg_dela__10_place__02_07726_kaz_place/0772610S.px/
 
 
 ## Program
