@@ -8,5 +8,6 @@ ZASEDENA <- read_csv2("podatki/zasedenamesta.csv",
   select(-"zasedena")
 
 
-
+zasedena.mesta <- gather(ZASEDENA, -dejavnosti, key=leto, value = zasedena, na.rm = TRUE)
+zasedena.mesta$leto <- parse_integer(zasedena.mesta$leto)
 
