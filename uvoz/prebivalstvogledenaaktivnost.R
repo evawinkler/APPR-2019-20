@@ -29,6 +29,9 @@ ZENSKEVZHODNA <- read_csv2("podatki/aktivnostzenskevzhodna.csv", col_names=c( "v
   select(-"vzhodna", -"zenske")
 
 
+zenskevzhodna <- gather(ZENSKEVZHODNA, -razlogi, key=leto, value = stevilo , na.rm = TRUE)
+
+zenskevzhodna$leto <- parse_integer(zenskevzhodna$leto) 
 
 
 
@@ -36,3 +39,7 @@ ZENSKEZAHODNA <- read_csv2("podatki/aktivnostzenskezahodna.csv", col_names=c( "z
                           skip = 3, na="N", locale=locale(encoding = "Windows-1250"))%>%
   select(-"zahodna", -"zenske")
 
+
+zenskezahodna <- gather(ZENSKEZAHODNA, -razlogi, key=leto, value = stevilo , na.rm = TRUE)
+
+zenskezahodna$leto <- parse_integer(zenskezahodna$leto) 
