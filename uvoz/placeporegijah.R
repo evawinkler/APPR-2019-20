@@ -5,3 +5,6 @@ library(dplyr)
 
 PLACEPOREGIJAH <- read_csv2("podatki/placeporegijah.csv", col_names=c( "regije", 2008:2018 ),
                                 skip = 3, na="-", locale=locale(encoding = "Windows-1250"))
+
+placeporegijah <- gather(PLACEPOREGIJAH, -regije, key=leto, value = stevilo , na.rm = TRUE)
+placeporegijah$leto <- parse_integer(placeporegijah$leto)
