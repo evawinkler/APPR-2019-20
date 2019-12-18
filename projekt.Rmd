@@ -38,6 +38,25 @@ Najprej bom analizirala prosta delovna mesta glede na dejavnosti ter delovno akt
 source("uvoz/uvoz.r", encoding="UTF-8")
 ```
 
+V tej fazi obdelave podatkov, sem uvozila tabele v CSV obliki. Podatke imam v 9 razpredelnicah, v *tidy data* obliki. 
+
+1. PROSTA DELOVNA MESTA V SLOVENIJI GLEDE NA DEJAVNOSTI 
+  - `leto` - leto v katerem so bile meritve opravljene
+  - `dejavnost` - spremenljivka : dejavnosti
+  - `prosta mesta` - meritev : prosta mesta glede na leto in dejavnost 
+2. ZASEDENA DELOVNA MESTA V SLOVENIJI GLEDE NA DEJAVNOSTI 
+3. DELAVNO AKTIVNO PREBIVALSTVA GLEDE NA AKTIVNOST
+4. MOŠKI GLEDE NA AKTIVNOST V VZHODNI SLOVENIJI 
+5. MOŠKO GLEDE NA AKTIVNOST V ZAHODNI SLOVENIJI 
+6. ŽENSKE GLEDE NA AKTIVNOST V VZHODNI SLOVENIJI
+7. ŽENSKE GLEDE NA AKTIVNOST V ZAHODNI SLOVENIJI 
+8. POVPREČNE LETNE PLAČE PO DEJAVNOSTIH 
+  - `leto` - leto v katerem so bile meritve opravljene
+  - `dejavnost` - spremenljivka : dejavnosti
+  - `povprečna plača` - meritev : povprečna neto plača glede na leto in dejavnost (v €)
+9. POVPREČNE LETNE PLAČE PO REGIJAH 
+
+
 Uvozili smo podatke o občinah v obliki CSV s statističnega urada ter v obliki HTML
 z Wikipedije. Podatke imamo v dveh razpredelnicah v obliki *tidy data*.
 
