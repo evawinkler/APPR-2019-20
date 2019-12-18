@@ -18,16 +18,13 @@ https://pxweb.stat.si/SiStatDb/pxweb/sl/10_Dem_soc/10_Dem_soc__07_trg_dela__30_0
 2. tabela : Delovno aktivno prebivalstvo glede na dejavnosti 
 https://pxweb.stat.si/SiStatDb/pxweb/sl/10_Dem_soc/10_Dem_soc__07_trg_dela__06_akt_preb_reg_viri_strukturni__10_07754_dejavnost/0775401S.px/ 
 
-3.tabela : Delovno aktivni po glavnih poklicnih skupinah, spolu
-https://pxweb.stat.si/SiStatDb/pxweb/sl/10_Dem_soc/10_Dem_soc__07_trg_dela__02_07008_akt_preb_po_anketi__02_07621_akt_preb_ADS_letno/0762106S.px/
-
-4. tabela : Prebivalci glede na aktivnost (aktivni, neaktivni, brezposelni), po spolu in kohezijskih regijah (Vzhodna in Zahodna Slovenija)  
+3. tabela : Prebivalci glede na aktivnost (aktivni, neaktivni, brezposelni), po spolu in kohezijskih regijah (Vzhodna in Zahodna Slovenija)  
 https://pxweb.stat.si/SiStatDb/pxweb/sl/10_Dem_soc/10_Dem_soc__07_trg_dela__02_07008_akt_preb_po_anketi__01_07620_akt_preb_ADS_cetrt/0762001S.px/
 
-5. tabela : Povprečne mesečne plače  pri registriranih fizičnih osebah po dejavnostih
+4. tabela : Povprečne mesečne plače  pri registriranih fizičnih osebah po dejavnostih
 https://pxweb.stat.si/SiStatDb/pxweb/sl/10_Dem_soc/10_Dem_soc__07_trg_dela__10_place__01_07010_place/0701070S.px/
  
-6. tabela: Povprečne mesečne plače po statističnih regijah
+5. tabela: Povprečne mesečne plače po statističnih regijah
 https://pxweb.stat.si/SiStatDb/pxweb/sl/10_Dem_soc/10_Dem_soc__07_trg_dela__10_place__02_07726_kaz_place/0772610S.px/
 
 
