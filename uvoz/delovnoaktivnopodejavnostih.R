@@ -9,3 +9,5 @@ DELOVNOAKTIVNO <- read_csv2("podatki/delovnoaktivnopodejavnostih.csv", col_names
 delovnoaktivno <- gather(DELOVNOAKTIVNO, -dejavnosti, key=leto, value = stevilo , na.rm = TRUE)
 delovnoaktivno$leto <- parse_integer(delovnoaktivno$leto)
 
+
+
