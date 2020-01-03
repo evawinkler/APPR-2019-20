@@ -48,3 +48,5 @@ moski <- full_join(moskivzhodna,moskizahodna)
 zenske <- full_join(zenskevzhodna,zenskezahodna)
 
 prebivalstvo.aktivnost <- full_join(moski,zenske)
+
+
