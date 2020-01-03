@@ -50,3 +50,4 @@ zenske <- full_join(zenskevzhodna,zenskezahodna)
 prebivalstvo.aktivnost <- full_join(moski,zenske)
 
 
+
