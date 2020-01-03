@@ -9,3 +9,5 @@ PLACEPODEJAVNOSTIH <- read_csv2("podatki/placepodejavnostih.csv", col_names=c("n
 
 placepodejavnostih <- gather(PLACEPODEJAVNOSTIH, -dejavnosti, key=leto, value = stevilo , na.rm = TRUE)
 placepodejavnostih$leto <- parse_integer(placepodejavnostih$leto)
+
+povprecje.plac<- placepodejavnostih %>% group_by(dejavnosti) %>% summarise(povprecje=sum(stevilo)/(11))
