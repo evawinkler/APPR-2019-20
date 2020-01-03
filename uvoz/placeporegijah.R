@@ -10,5 +10,7 @@ PLACEPOREGIJAH <- read_csv2("podatki/placeporegijah.csv", col_names=c( "regije",
 placeporegijah <- gather(PLACEPOREGIJAH, -regije, key=leto, value = stevilo , na.rm = TRUE)
 placeporegijah$leto <- parse_integer(placeporegijah$leto)
 
+povprecje <- placeporegijah %>% group_by(regije) %>% summarise(povprecje=sum(stevilo)/(11))
+
 
 regije <- uvozi.zemljevid("https://gadm.org/img/480/gadm/SVN/SVN_divs.png", "SVN_divs", encoding =NULL, force=FALSE, mapa ="APPR/projektappr/zemljevidi")
