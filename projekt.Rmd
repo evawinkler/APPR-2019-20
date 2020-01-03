@@ -112,6 +112,8 @@ Nadaljujem z grafom, ki prikazuje število prostih mest v posameznem letu. Graf 
 
 S pomočjo zemljevida Slovenije lahko vidimo porazdelitev povprečnih plač glede na regije. Razberemo,da najvišja povprečna letna plača v Sloveniji je v Osrednjeslovenski regiji. To je seveda pričakovano, saj se tam nahaja glavno mesto Ljubljana, ki je središče države. Zanimivo je za se za Osrednjeslovensko regijo na drugem mestu nahaja Gorenjska. Sklepam, da na to vplivata večja turistična kraja, kot sta Bled in Kranjska Gora. 
 
+Iz podatkov o povprečnih letnih plačah pri registriranih fizičnih osebah po dejavnostih sem ugotovila naslednje. Iz računala sem povprečne plače v zadnjih 10 letih. 
+
 
 
 ```{r vizualizacija, echo=FALSE, message=FALSE, warning=FALSE, results='hide'}
