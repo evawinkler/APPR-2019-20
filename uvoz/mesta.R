@@ -22,3 +22,6 @@ zasedena.mesta$leto <- parse_integer(zasedena.mesta$leto)
 
 
 mesta <- full_join(prosta.mesta,zasedena.mesta)
+
+vsota.zasedena <- zasedena.mesta %>% group_by(leto) %>% summarise(vsota=sum(zasedena))
+vsota.prosta <- prosta.mesta %>% group_by(leto) %>% summarise(vsota=sum(prosta))
