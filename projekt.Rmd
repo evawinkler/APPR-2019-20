@@ -38,57 +38,37 @@ V projektni nalogi bom analizira trg dela v Sloveniji s pomočjo dejavnikov, ki 
 source("uvoz/uvoz.r", encoding="UTF-8")
 ```
 
-V tej fazi obdelave podatkov, sem uvozila tabele v CSV obliki. Podatke imam v 9 razpredelnicah, v *tidy data* obliki. 
+V tej fazi obdelave podatkov, sem uvozila tabele v CSV obliki. Podatke imam v 5 razpredelnicah, v *tidy data* obliki. 
 
-1. PROSTA DELOVNA MESTA V SLOVENIJI GLEDE NA DEJAVNOSTI 
-
-  - `leto` - leto v katerem so bile meritve opravljene (število)
-  - `dejavnost` - spremenljivka : dejavnosti (besedilo)
-  - `prosta mesta` - meritev : prosta mesta glede na leto in dejavnost  (število)
-  
-2. ZASEDENA DELOVNA MESTA V SLOVENIJI GLEDE NA DEJAVNOSTI 
+1.  DELOVNA MESTA V SLOVENIJI GLEDE NA DEJAVNOSTI 
 
   - `leto` - leto v katerem so bile meritve opravljene (število)
   - `dejavnost` - spremenljivka : dejavnosti (besedilo)
-  - `zasedena mesta` - meritev : zasedena mesta glede na leto in dejavnost  (število)
+  - `prosta` - meritev : prosta mesta glede na leto in dejavnost  (število)
+  - `zasedena` - meritev : zasedena mesta glede na leto in dejavnost  (število)
   
-3. DELAVNO AKTIVNO PREBIVALSTVA GLEDE NA AKTIVNOST
+2. DELAVNO AKTIVNO PREBIVALSTVA GLEDE NA AKTIVNOST
 
   - `leto` - leto v katerem so bile meritve opravljene (število)
   - `dejavnost` - spremenljivka : dejavnosti (besedilo)
   - `delovno aktivno prebivalstvo` - meritev : število delovno aktivnega prebivalstva glede na leto in dejavnost     (število)
   
-4. MOŠKI GLEDE NA AKTIVNOST V VZHODNI SLOVENIJI 
+3. PREBIVALSTVO GLEDE NA AKTIVNOST V VZHODNI IN ZAHODNI SLOVENIJI
 
   - `leto` - leto v katerem so bile meritve opravljene (število)
   - `aktivnost` - spremenljivka : moski glede na aktivnost, način zaposljenosti (besedilo)
-  - `moški glede na aktivnost` - meritev : moški glede na aktivnost v Vzhodni Sloveniji, v  tisočih  (število)
+  - `vzhodna.moski` - meritev : moški glede na aktivnost v Vzhodni Sloveniji, v  tisočih  (število)
+  - `zahodna.moski` - meritev : moški glede na aktivnost v Zahodni Sloveniji, v  tisočih  (število)
+  - `vzhodna.zenske` - meritev : ženske glede na aktivnost v Vzhodni Sloveniji, v  tisočih (število)
+  - `zahodna.zenske` - meritev : ženske glede na aktivnost v Zahodni Sloveniji, v  tisočih  (število)
   
-5. MOŠKi GLEDE NA AKTIVNOST V ZAHODNI SLOVENIJI
-
-  - `leto` - leto v katerem so bile meritve opravljene (število)
-  - `aktivnost` - spremenljivka : moski glede na aktivnost, način zaposljenosti (besedilo)
-  - `moški glede na aktivnost` - meritev : moški glede na aktivnost v Zahodni Sloveniji, v  tisočih  (število)
-  
-6. ŽENSKE GLEDE NA AKTIVNOST V VZHODNI SLOVENIJI
-
-  - `leto` - leto v katerem so bile meritve opravljene (število)
-  - `aktivnost` - spremenljivka : ženske glede na aktivnost, način zaposljenosti(besedilo)
-  - `ženske glede na aktivnost` - meritev : ženske glede na aktivnost v Vzhodni Sloveniji, v  tisočih (število)
-  
-7. ŽENSKE GLEDE NA AKTIVNOST V ZAHODNI SLOVENIJI 
-
-  - `leto` - leto v katerem so bile meritve opravljene (število)
-  - `aktivnost` - spremenljivka : ženske glede na aktivnost, način zaposljenosti (besedilo)
-  - `ženske glede na aktivnost` - meritev : ženske glede na aktivnost v Zahodni Sloveniji, v  tisočih  (število)
-  
-8. POVPREČNE LETNE PLAČE PO DEJAVNOSTIH 
+4. POVPREČNE LETNE PLAČE PO DEJAVNOSTIH 
 
   - `leto` - leto v katerem so bile meritve opravljene (število)
   - `dejavnost` - spremenljivka : dejavnosti (besedilo)
   - `povprečna letna plača` - meritev : povprečna neto plača glede na leto in dejavnost (v €) (število)
   
-9. POVPREČNE LETNE PLAČE PO REGIJAH 
+5. POVPREČNE LETNE PLAČE PO REGIJAH 
 
  - `leto` - leto v katerem so bile meritve opravljene (število)
   - `regije` - spremenljivka : regije v Sloveniji (besedilo)
