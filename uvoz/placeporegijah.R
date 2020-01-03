@@ -13,4 +13,7 @@ placeporegijah$leto <- parse_integer(placeporegijah$leto)
 povprecje <- placeporegijah %>% group_by(regije) %>% summarise(povprecje=sum(stevilo)/(11))
 
 
-regije <- uvozi.zemljevid("https://gadm.org/img/480/gadm/SVN/SVN_divs.png", "SVN_divs", encoding =NULL, force=FALSE, mapa ="APPR/projektappr/zemljevidi")
+
+zemljevid <- uvozi.zemljevid("https://biogeo.ucdavis.edu/data/gadm3.6/shp/gadm36_SVN_shp.zip", "gadm36_SVN_1", encoding = "Windows-1250")
+
+tm_shape(merge(povprecje,by.x="GID_0",by.y="regije"))+ tm_legend(show=FALSE)
