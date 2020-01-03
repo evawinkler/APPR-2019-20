@@ -10,10 +10,15 @@ PLACEPOREGIJAH <- read_csv2("podatki/placeporegijah.csv", col_names=c( "regije",
 placeporegijah <- gather(PLACEPOREGIJAH, -regije, key=leto, value = stevilo , na.rm = TRUE)
 placeporegijah$leto <- parse_integer(placeporegijah$leto)
 
-povprecje <- placeporegijah %>% group_by(regije) %>% summarise(povprecje=sum(stevilo)/(11))
+povprecje.regije <- placeporegijah %>% group_by(regije) %>% summarise(povprecje=sum(stevilo)/(11))
 
 
 
 zemljevid <- uvozi.zemljevid("https://biogeo.ucdavis.edu/data/gadm3.6/shp/gadm36_SVN_shp.zip", "gadm36_SVN_1", encoding = "Windows-1250")
 
-tm_shape(merge(povprecje,by.x="GID_0",by.y="regije"))+ tm_legend(show=FALSE)
+
+
+names(zemljevid)
+
+tm_shape(merge(zemljevid, povprecje.regije, by.x="NAME_1", by.y="povprecje" ))+ tm_polygons("povprecje") 
+
