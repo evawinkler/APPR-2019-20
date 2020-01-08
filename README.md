@@ -13,18 +13,23 @@ Najprej bom analizirala prosta delovna mesta glede na dejavnosti ter delovno akt
 V nadaljevanju bom dodala še pregled aktivnega prebivalstva ( koliko jih je zaposlenih in brezposlenih) in  pregled neaktivnega prebivalstva glede na razloge ne dela. 
 
 1. tabela: Prosta in zasedena delovna mesta glede na dejavnosti  v Sloveniji
+Podatki so v obliki CSV. 
 https://pxweb.stat.si/SiStatDb/pxweb/sl/10_Dem_soc/10_Dem_soc__07_trg_dela__30_07146_prosta_mesta/0714611S.px/
 
 2. tabela : Delovno aktivno prebivalstvo glede na dejavnosti 
+Podatki so v obliki CSV. 
 https://pxweb.stat.si/SiStatDb/pxweb/sl/10_Dem_soc/10_Dem_soc__07_trg_dela__06_akt_preb_reg_viri_strukturni__10_07754_dejavnost/0775401S.px/ 
 
 3. tabela : Prebivalci glede na aktivnost (aktivni, neaktivni, brezposelni), po spolu in kohezijskih regijah (Vzhodna in Zahodna Slovenija)  
+Podatki so v obliki CSV. 
 https://pxweb.stat.si/SiStatDb/pxweb/sl/10_Dem_soc/10_Dem_soc__07_trg_dela__02_07008_akt_preb_po_anketi__01_07620_akt_preb_ADS_cetrt/0762001S.px/
 
 4. tabela : Povprečne mesečne plače  pri registriranih fizičnih osebah po dejavnostih
+Podatki so v obliki XLSX. 
 https://pxweb.stat.si/SiStatDb/pxweb/sl/10_Dem_soc/10_Dem_soc__07_trg_dela__10_place__01_07010_place/0701070S.px/
  
 5. tabela: Povprečne mesečne plače po statističnih regijah
+Podatki so v obliki XLSX.
 https://pxweb.stat.si/SiStatDb/pxweb/sl/10_Dem_soc/10_Dem_soc__07_trg_dela__10_place__02_07726_kaz_place/0772610S.px/
 
 
