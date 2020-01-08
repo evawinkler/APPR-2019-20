@@ -36,6 +36,6 @@ library(ggplot2)
 library(dplyr)
 
 
-ggplot(data = vsota.zasedena,aes(x=leto, y=vsota)) + geom_line()
-ggplot(data = vsota.prosta,aes(x=leto, y=vsota)) + geom_point()
+ggplot(data = vsota.zasedena,aes(x=leto, y=vsota)) + geom_line()+ ggtitle("Število zasedenih mest v zadnjem destletju")
+ggplot(data = vsota.prosta,aes(x=leto, y=vsota)) + geom_point()+ ggtitle("Število prostih mest v zadnjem destletju")
 
