@@ -92,10 +92,12 @@ Spodnji graf prikazuje število zasedenih mest v posameznem letu od 2008 do 2018
 g1
 ```
 
-Nadaljujem z grafom, ki prikazuje število prostih mest v posameznem letu. Graf nam prikazuje, kako se je spreminjalo število prostih delovnih mest na celotnem trgu dela. Prav tako, je tudi tukaj viden vpliv krize. Pričakovali bi graf, ki bi bil nasproten prejšnemu, a ni tako. V času krize je število prostih mest nizko, saj delodajalci ne razpisujejo prostih delovnih mest in samo odpuščajo. Šele po letu 2014, ko se stanje izbolšuje, narašča tudi število prostih mest. 
+Nadaljujem z grafom, ki prikazuje število prostih mest v posameznem letu. Graf nam prikazuje, kako se je spreminjalo število prostih delovnih mest na celotnem trgu dela. Prav tako, je tudi tukaj viden vpliv krize. Pričakovali bi graf, ki bi bil nasproten prejšnemu, a ni tako. V času krize je število prostih mest nizko, saj delodajalci ne razpisujejo prostih delovnih mest in samo odpuščajo. Šele po letu 2014, ko se stanje izbolšuje, narašča tudi število prostih mest.
+
 ```{r g2, echo=FALSE, message=FALSE, warning=FALSE}
 g2
 ```
+
 S pomočjo zemljevida Slovenije lahko vidimo porazdelitev povprečnih mesečnih plač glede na regije. Razberemo,da najvišja povprečna mesečna plača v Sloveniji je v Osrednjeslovenski regiji. To je seveda pričakovano, saj se tam nahaja glavno mesto Ljubljana, ki je središče države. Zanimivo je za se za Osrednjeslovensko regijo na drugem mestu nahaja Gorenjska. Sklepam, da na to vplivata večja turistična kraja, kot sta Bled in Kranjska Gora. 
 
 Spodnji zemljevid prikazuje povprečno mesečno plačo. 
