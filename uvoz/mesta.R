@@ -1,7 +1,8 @@
 library(readr)
 library(tidyr)
 library(dplyr)
-
+library(ggplot2)
+library(dplyr)
 
 PROSTA <- read_csv2("podatki/prostamesta.csv", col_names=c("prosta", "dejavnosti", 2008:2018 ),
                     skip = 3, na="N", locale=locale(encoding = "Windows-1250"))%>%
@@ -32,10 +33,5 @@ vsota.prosta <- prosta.mesta %>% group_by(leto) %>% summarise(vsota=sum(prosta))
 
 
 
-library(ggplot2)
-library(dplyr)
 
-
-ggplot(data = vsota.zasedena,aes(x=leto, y=vsota)) + geom_line()+ ggtitle("Število zasedenih mest v zadnjem destletju")
-ggplot(data = vsota.prosta,aes(x=leto, y=vsota)) + geom_point()+ ggtitle("Število prostih mest v zadnjem destletju")
 
