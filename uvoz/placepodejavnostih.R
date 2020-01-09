@@ -1,8 +1,4 @@
-library(readr)
-library(tidyr)
-library(dplyr) 
-library("readxl")
-library("openxlsx")
+
 
 PLACEPODEJAVNOSTIH <- read_xlsx("podatki/placepodejavnostih1.xlsx",col_names=c("dejavnosti", 2008:2018),
                                 skip = 4, na="-")
