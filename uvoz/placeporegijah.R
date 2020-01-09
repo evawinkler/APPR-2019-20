@@ -1,10 +1,4 @@
-library(readr)
-library(tidyr)
-library(dplyr) 
-library("readxl")
-library("openxlsx")
-library(tmap)
-source("https://raw.githubusercontent.com/jaanos/APPR-2019-20/master/lib/uvozi.zemljevid.r")
+
 
 PLACEPOREGIJAH <- read_xlsx("podatki/placeporegijah2.xlsx", col_names=c( "regije", 2008:2018 ),
                                 skip = 4, na="-")
