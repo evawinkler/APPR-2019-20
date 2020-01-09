@@ -74,62 +74,34 @@ V tej fazi obdelave podatkov, sem uvozila tabele v CSV obliki. Podatke imam v 5 
   - `regije` - spremenljivka : regije v Sloveniji (besedilo)
   - `povprečna mesečna plača` - meritev : povprečna neto plača glede na leto in regijo  (v €) (število)
   
-Uvozili smo podatke o občinah v obliki CSV s statističnega urada ter v obliki HTML
-z Wikipedije. Podatke imamo v dveh razpredelnicah v obliki *tidy data*.
-
-1. `druzine` - podatki o družinah za vsako občino
-  - `obcina` - spremenljivka: ime občine (neurejen faktor),
-  - `velikost.druzine` - spremenljivka: število otrok v družini (število: 1, 2, 3 ali 4, kjer zadnja vrednost pomeni 4 ali več),
-  - `stevilo.druzin` - meritev: število družin z ustreznim številom otrok v ustrezni občini (število).
-
-2. `obcine` - podatki o občinah
-  - `obcina` - spremenljivka: ime občine (neurejen faktor),
-  - `povrsina` - meritev: površina občine v km$^2$ (število),
-  - `prebivalci` - meritev: prebivalstvo občine (število),
-  - `gostota` - meritev: število prebivalcev na km$^2$ (število),
-  - `naselja` - meritev: število naselij v občini (število),
-  - `ustanovitev` - meritev: leto ustanovitve občine (število),
-  - `pokrajina` - meritev: pokrajina, ki ji občina pripada (neurejen faktor),
-  - `regija` - meritev: regija, ki ji občina pripada (neurejen faktor),
-  - `odcepitev` - meritev: podatki o občinah, od katerih se je občina odcepila (besedilo).
-
-**Opomba**: da bi razpredelnica `obcine` res bila v obliki *tidy data*, bi morali odstraniti stolpec `gostota` (saj je izpeljan iz stolpcev `povrsina` in `prebivalci`), podatke o pokrajinah pa bi morali premakniti v drugo razpredelnico, saj nekatere občine pripadajo dvema pokrajinama. Podobno bi morali narediti tudi s stolpcem `odcepitev`.
-
-Spodnji graf prikazuje porazdelitev števila naselij v občinah.
-
-```{r histogram, echo=FALSE, message=FALSE, fig.align='center', fig.cap='Histogram števila naselij v občinah'}
-ggplot(obcine, aes(x=naselja)) + geom_histogram() +
-  ggtitle("Pogostost števila naselij") + xlab("Število naselij") + ylab("Število občin")
-```
-
 ***
 
 # Analiza in vizualizacija podatkov
-
-Spodnji graf prikazuje število zasedenih mest v posameznem letu od 2008 do 2018. V namen analize sem združila dejavnosti in seštela zasedena mesta za posamezna leta. Tako sem dobila število zasedenih mest v posameznem letu. Iz podatkov in grafa lahko vidimo vpliv krize v Sloveniji. Posledica krize, ki se je začela leta 2008, je bila povečana brezposelnost. Torej število zasedenih delovnih mest je upadlo. Prav to vidimo v grafu, saj je od leta 2008 število mest samo še upadalo.Iz grafa razberemo, da se je stanje na trgu dela začelo izboljšavati po letu 2015. 
-
-Nadaljujem z grafom, ki prikazuje število prostih mest v posameznem letu. Graf nam prikazuje, kako se je spreminjalo število prostih delovnih mest na celotnem trgu dela. Prav tako, je tudi tukaj viden vpliv krize. Pričakovali bi graf, ki bi bil nasproten prejšnemu, a ni tako. V času krize je število prostih mest nizko, saj delodajalci ne razpisujejo prostih delovnih mest in samo odpuščajo. Šele po letu 2014, ko se stanje izbolšuje, narašča tudi število prostih mest. 
-
-S pomočjo zemljevida Slovenije lahko vidimo porazdelitev povprečnih mesečnih plač glede na regije. Razberemo,da najvišja povprečna mesečna plača v Sloveniji je v Osrednjeslovenski regiji. To je seveda pričakovano, saj se tam nahaja glavno mesto Ljubljana, ki je središče države. Zanimivo je za se za Osrednjeslovensko regijo na drugem mestu nahaja Gorenjska. Sklepam, da na to vplivata večja turistična kraja, kot sta Bled in Kranjska Gora. 
-
-Spodnji zemljevid prikazuje povprečno mesečno plačo. 
-
-Iz podatkov o povprečnih mesečnih plačah pri registriranih fizičnih osebah po dejavnostih sem ugotovila naslednje. Iz računala sem povprečne mesečne plače v zadnjih 10 letih.V povprečju so najvišje mesečne plače skozi zadnje destletje v zdravstvu in socialnemu varstvu. 
-
-
 
 ```{r vizualizacija, echo=FALSE, message=FALSE, warning=FALSE, results='hide'}
 source("vizualizacija/vizualizacija.r", encoding="UTF-8")
 ```
 
-Spodnji zemljevid prikazuje povprečno velikost družine za vsako občino.
+Spodnji graf prikazuje število zasedenih mest v posameznem letu od 2008 do 2018. V namen analize sem združila dejavnosti in seštela zasedena mesta za posamezna leta. Tako sem dobila število zasedenih mest v posameznem letu. Iz podatkov in grafa lahko vidimo vpliv krize v Sloveniji. Posledica krize, ki se je začela leta 2008, je bila povečana brezposelnost. Torej število zasedenih delovnih mest je upadlo. Prav to vidimo v grafu, saj je od leta 2008 število mest samo še upadalo.Iz grafa razberemo, da se je stanje na trgu dela začelo izboljšavati po letu 2015.
 
-```{r zemljevid, echo=FALSE, fig.align='center', fig.cap='Zemljevid povprečnega števila otrok v družini'}
-ggplot() + geom_polygon(data=left_join(zemljevid, povprecja, by=c("OB_UIME"="obcina")),
-                        aes(x=long, y=lat, group=group, fill=povprecje)) +
-  ggtitle("Povprečno število otrok v družini") + xlab("") + ylab("") +
-  guides(fill=guide_colorbar(title="Povprečje"))
+```{r g1, echo=FALSE, message=FALSE, warning=FALSE}
+g1
 ```
+
+Nadaljujem z grafom, ki prikazuje število prostih mest v posameznem letu. Graf nam prikazuje, kako se je spreminjalo število prostih delovnih mest na celotnem trgu dela. Prav tako, je tudi tukaj viden vpliv krize. Pričakovali bi graf, ki bi bil nasproten prejšnemu, a ni tako. V času krize je število prostih mest nizko, saj delodajalci ne razpisujejo prostih delovnih mest in samo odpuščajo. Šele po letu 2014, ko se stanje izbolšuje, narašča tudi število prostih mest. 
+```{r g2, echo=FALSE, message=FALSE, warning=FALSE}
+g2
+```
+S pomočjo zemljevida Slovenije lahko vidimo porazdelitev povprečnih mesečnih plač glede na regije. Razberemo,da najvišja povprečna mesečna plača v Sloveniji je v Osrednjeslovenski regiji. To je seveda pričakovano, saj se tam nahaja glavno mesto Ljubljana, ki je središče države. Zanimivo je za se za Osrednjeslovensko regijo na drugem mestu nahaja Gorenjska. Sklepam, da na to vplivata večja turistična kraja, kot sta Bled in Kranjska Gora. 
+
+Spodnji zemljevid prikazuje povprečno mesečno plačo. 
+
+```{r z1, echo=FALSE, message=FALSE, warning=FALSE}
+ z1
+```
+
+Iz podatkov o povprečnih mesečnih plačah pri registriranih fizičnih osebah po dejavnostih sem ugotovila naslednje. Iz računala sem povprečne mesečne plače v zadnjih 10 letih.V povprečju so najvišje mesečne plače skozi zadnje destletje v zdravstvu in socialnemu varstvu. 
+
 
 ***
 
