@@ -1,6 +1,4 @@
-library(readr)
-library(tidyr)
-library(dplyr)
+
 
 
 MOSKIVZHODNA <- read_csv2("podatki/aktivnostmoskivzhodna.csv", col_names=c( "vzhodna", "aktivnost", "MOSKI", 2008:2018 ),
