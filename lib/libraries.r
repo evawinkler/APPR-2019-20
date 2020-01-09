@@ -4,6 +4,11 @@ library(gsubfn)
 library(tidyr)
 library(shiny)
 options(gsubfn.engine="R")
+library("readxl")
+library("openxlsx")
+library(tmap)
+source("https://raw.githubusercontent.com/jaanos/APPR-2019-20/master/lib/uvozi.zemljevid.r")
+library(ggplot2)
+library(dplyr)
+library(readr)
 
-# Uvozimo funkcije za pobiranje in uvoz zemljevida.
-source("lib/uvozi.zemljevid.r", encoding="UTF-8")
