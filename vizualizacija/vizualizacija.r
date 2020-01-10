@@ -19,3 +19,5 @@ z1 <- tm_shape(merge(zemljevid, povprecje.regije, by.x="NAME_1", by.y="regije" )
 
 g1 <- ggplot(data = vsota.zasedena,aes(x=leto, y=vsota)) + geom_line()+ ggtitle("Število zasedenih mest v zadnjem destletju")
 g2 <- ggplot(data = vsota.prosta,aes(x=leto, y=vsota)) + geom_point()+ ggtitle("Število prostih mest v zadnjem destletju")
+
+
