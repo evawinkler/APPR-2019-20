@@ -35,11 +35,7 @@ V projektni nalogi bom analizira trg dela v Sloveniji s pomočjo dejavnikov, ki 
 # Obdelava, uvoz in čiščenje podatkov
 
 ```{r uvoz, echo=FALSE, message=FALSE}
-source("uvoz/mesta.R", encoding="UTF-8")
-source("uvoz/placepodejavnostih.R", encoding="UTF-8")
-source("uvoz/placeporegijah.R", encoding="UTF-8")
-source("uvoz/dejavnostiaktivnost.R", encoding="UTF-8")
-source("uvoz/izobrazbaaktivnost.R", encoding="UTF-8")
+source("uvoz/uvoz.R", encoding="UTF-8")
 ```
 
 V tej fazi obdelave podatkov, sem uvozila tabele v CSV in XLSX obliki. Podatke imam v 5 razpredelnicah, v *tidy data* obliki. 
@@ -83,18 +79,30 @@ V tej fazi obdelave podatkov, sem uvozila tabele v CSV in XLSX obliki. Podatke i
 source("vizualizacija/vizualizacija.r", encoding="UTF-8")
 ```
 
-Spodnji graf prikazuje število zasedenih mest v posameznem letu od 2008 do 2018. V namen analize sem združila dejavnosti in seštela zasedena mesta za posamezna leta. Tako sem dobila število zasedenih mest v posameznem letu. Iz podatkov in grafa lahko vidimo vpliv krize v Sloveniji. Posledica krize, ki se je začela leta 2008, je bila povečana brezposelnost. Torej število zasedenih delovnih mest je upadlo. Prav to vidimo v grafu, saj je od leta 2008 število mest samo še upadalo.Iz grafa razberemo, da se je stanje na trgu dela začelo izboljšavati po letu 2015.
+Sedaj sledi analiza trga dela v Sloveniji skozi podatke v zadnjem desetletju. Osredotočila se bom na glavne kategorija trg dela. Te so prosta in zasedena delovna mesta, delovno aktivno prebivalstvo in plače. 
+
+Glavni namen analize podatkov je prikaz vpliva krize, ki se je začela leta 2008. Pred nastopom krize je bila Slovenija v gospodarski rasti. Ob nastopu finančne krize pa se je dogajanje na trgu dela spremenilo. Posledice so bile takoj občutne, predvsem na strani življenja prebivalstva. V ta namen bom analizirala podatke preko katerih bom odgovorila na naslednji vprašanji: 
+Ali so posledice krize vidne še danes?
+Ali je Slovenija že dosegla stanje izpred krize?
+
+
+Najprej se bom dotaknila prostih in zasedenih delovnih mest.
+
+Spodnji graf prikazuje število zasedenih mest v posameznem letu od 2008 do 2018. V namen analize sem združila dejavnosti in seštela zasedena mesta za posamezna leta. Tako sem dobila število zasedenih mest v posameznem letu.
+Pred nastopom krize torej do leta 2008, je bila Slovenija v gospodarski rasti. Gospodarska konjunktura je tudi v grafu vidna, saj je število zasedenih prostih mesto največje v zadnjih 10 letih. Posledica krize je bila povečana brezposelnost. Torej število zasedenih delovnih mest je upadlo. Prav to vidimo v grafu, saj je od leta 2008 število mest samo še upadalo.Najnižje stanje je bilo leta 2014. Iz grafa razberemo, da se je stanje na trgu dela začelo izboljšavati po letu 2015. Kljub temu pa do leta 2018 nismo še dosegli števila zasedenih mest izpred krize. Prav tako, lahko s pomočjo gibanja zasedenih mest opišemo gibanje zaposlenosti, saj zasedena delovna mesta pravzaprav predstavljajo število zaposljenih ljudi v posameznih dejavnostih. 
 
 ```{r g1, echo=FALSE, message=FALSE, warning=FALSE}
 g1
 ```
 
-Nadaljujem z grafom, ki prikazuje število prostih mest v posameznem letu. Graf nam prikazuje, kako se je spreminjalo število prostih delovnih mest na celotnem trgu dela. Prav tako, je tudi tukaj viden vpliv krize. Pričakovali bi graf, ki bi bil nasproten prejšnemu, a ni tako. V času krize je število prostih mest nizko, saj delodajalci ne razpisujejo prostih delovnih mest in samo odpuščajo. Šele po letu 2014, ko se stanje izbolšuje, narašča tudi število prostih mest.
+Nadaljujem z grafom, ki prikazuje število prostih mest v posameznem letu.Prav tako, je tudi tukaj viden vpliv krize. Pričakovali bi graf, ki bi bil nasproten prejšnemu, a ni tako. V času krize je število prostih mest nizko, saj delodajalci ne razpisujejo prostih delovnih mest in samo odpuščajo. Šele po letu 2014, ko se stanje izbolšuje, narašča tudi število prostih mest.
 
 ```{r g2, echo=FALSE, message=FALSE, warning=FALSE}
 g2
 ```
 
+Naslednja kategorija analize je delovno aktivno prebivalstvo. 
+Najprej sem se dotaknila 
 S pomočjo zemljevida Slovenije lahko vidimo porazdelitev povprečnih mesečnih plač glede na regije. Razberemo,da najvišja povprečna mesečna plača v Sloveniji je v Osrednjeslovenski regiji. To je seveda pričakovano, saj se tam nahaja glavno mesto Ljubljana, ki je središče države. Zanimivo je za se za Osrednjeslovensko regijo na drugem mestu nahaja Gorenjska. Sklepam, da na to vplivata večja turistična kraja, kot sta Bled in Kranjska Gora. 
 
 Spodnji zemljevid prikazuje povprečno mesečno plačo. 
