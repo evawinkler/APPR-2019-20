@@ -35,14 +35,14 @@ V projektni nalogi bom analizira trg dela v Sloveniji s pomočjo dejavnikov, ki 
 # Obdelava, uvoz in čiščenje podatkov
 
 ```{r uvoz, echo=FALSE, message=FALSE}
-source("uvoz/delovnoaktivnopodejavnostih.R", encoding="UTF-8")
 source("uvoz/mesta.R", encoding="UTF-8")
 source("uvoz/placepodejavnostih.R", encoding="UTF-8")
 source("uvoz/placeporegijah.R", encoding="UTF-8")
-source("uvoz/prebivalstvogledenaaktivnost.R", encoding="UTF-8")
+source("uvoz/dejavnostiaktivnost.R", encoding="UTF-8")
+source("uvoz/izobrazbaaktivnost.R", encoding="UTF-8")
 ```
 
-V tej fazi obdelave podatkov, sem uvozila tabele v CSV obliki. Podatke imam v 5 razpredelnicah, v *tidy data* obliki. 
+V tej fazi obdelave podatkov, sem uvozila tabele v CSV in XLSX obliki. Podatke imam v 5 razpredelnicah, v *tidy data* obliki. 
 
 1.  DELOVNA MESTA V SLOVENIJI GLEDE NA DEJAVNOSTI 
 
@@ -51,20 +51,17 @@ V tej fazi obdelave podatkov, sem uvozila tabele v CSV obliki. Podatke imam v 5 
   - `prosta` - meritev : prosta mesta glede na leto in dejavnost  (število)
   - `zasedena` - meritev : zasedena mesta glede na leto in dejavnost  (število)
   
-2. DELAVNO AKTIVNO PREBIVALSTVA GLEDE NA AKTIVNOST
+2. DELAVNO AKTIVNO PREBIVALSTVO PO PODROČJIH DEJAVNOSTI
 
   - `leto` - leto v katerem so bile meritve opravljene (število)
   - `dejavnost` - spremenljivka : dejavnosti (besedilo)
-  - `delovno aktivno prebivalstvo` - meritev : število delovno aktivnega prebivalstva glede na leto in dejavnost(število)
+  - `delovno aktivno prebivalstvo` - meritev : število delovno aktivnega prebivalstva glede na leto in dejavnost, v tisočih (število)
   
-3. PREBIVALSTVO GLEDE NA AKTIVNOST V VZHODNI IN ZAHODNI SLOVENIJI
+3. DELAVNO AKTIVNO PREBIVALSTVO GLEDE NA STOPNJO DOSEŽENE IZOBRAZBE
 
   - `leto` - leto v katerem so bile meritve opravljene (število)
-  - `aktivnost` - spremenljivka : moski glede na aktivnost, način zaposljenosti (besedilo)
-  - `vzhodna.moski` - meritev : moški glede na aktivnost v Vzhodni Sloveniji, v  tisočih  (število)
-  - `zahodna.moski` - meritev : moški glede na aktivnost v Zahodni Sloveniji, v  tisočih  (število)
-  - `vzhodna.zenske` - meritev : ženske glede na aktivnost v Vzhodni Sloveniji, v  tisočih (število)
-  - `zahodna.zenske` - meritev : ženske glede na aktivnost v Zahodni Sloveniji, v  tisočih  (število)
+  - `izobrazba` - spremenljivka : izobrazba prebivalcev (besedilo)
+  - `delovno aktivno prebivalstvo` - meritev : število delovno aktivnega prebivalstva glede na leto in izobrazbo, v tisočih (število)
   
 4. POVPREČNE MESEČNE PLAČE PO DEJAVNOSTIH 
 
