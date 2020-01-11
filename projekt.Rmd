@@ -26,8 +26,7 @@ source("lib/rstudio.r", encoding="UTF-8")
 
 # Izbira teme
 
-V projektni nalogi bom analizira trg dela v Sloveniji s pomočjo dejavnikov, ki vplivajo nanj. Osredotočila se bom na obdobje od leta 2008 do leta 2018. Analizirala bom delovno aktivno prebivalstvo, brezposelno prebivalstvo ter prosta mesta. V nadaljevanju pa se dotaknila še plač. Cilj naloge je predstaviti stanje na trgu dela v zadnjem desetletju. Podatke sem našla na statističnem uradu v obliki csv. 
-
+V projektni nalogi bom analizira trg dela v Sloveniji s pomočjo dejavnikov, ki vplivajo nanj. Osredotočila se bom na obdobje od leta 2008 do leta 2018. Analizirala bom delovno aktivno prebivalstvo in  prosta mesta. V nadaljevanju pa se dotaknila še plač. Cilj naloge je predstaviti stanje na trgu dela v zadnjem desetletju. Podatke bom poiskala na Statističnem uradu Republike Slovenije. 
 
 
 ***
@@ -79,14 +78,13 @@ V tej fazi obdelave podatkov, sem uvozila tabele v CSV in XLSX obliki. Podatke i
 source("vizualizacija/vizualizacija.r", encoding="UTF-8")
 ```
 
-Sedaj sledi analiza trga dela v Sloveniji skozi podatke v zadnjem desetletju. Osredotočila se bom na glavne kategorija trg dela. Te so prosta in zasedena delovna mesta, delovno aktivno prebivalstvo in plače. 
 
 Glavni namen analize podatkov je prikaz vpliva krize, ki se je začela leta 2008. Pred nastopom krize je bila Slovenija v gospodarski rasti. Ob nastopu finančne krize pa se je dogajanje na trgu dela spremenilo. Posledice so bile takoj občutne, predvsem na strani življenja prebivalstva. V ta namen bom analizirala podatke preko katerih bom odgovorila na naslednji vprašanji: 
 Ali so posledice krize vidne še danes?
 Ali je Slovenija že dosegla stanje izpred krize?
 
+Osredotočila se bom na glavne kategorija trg dela. Te so prosta in zasedena delovna mesta, delovno aktivno prebivalstvo in plače.
 
-Najprej se bom dotaknila prostih in zasedenih delovnih mest.
 
 Spodnji graf prikazuje število zasedenih mest v posameznem letu od 2008 do 2018. V namen analize sem združila dejavnosti in seštela zasedena mesta za posamezna leta. Tako sem dobila število zasedenih mest v posameznem letu.
 Pred nastopom krize torej do leta 2008, je bila Slovenija v gospodarski rasti. Gospodarska konjunktura je tudi v grafu vidna, saj je število zasedenih prostih mesto največje v zadnjih 10 letih. Posledica krize je bila povečana brezposelnost. Torej število zasedenih delovnih mest je upadlo. Prav to vidimo v grafu, saj je od leta 2008 število mest samo še upadalo.Najnižje stanje je bilo leta 2014. Iz grafa razberemo, da se je stanje na trgu dela začelo izboljšavati po letu 2015. Kljub temu pa do leta 2018 nismo še dosegli števila zasedenih mest izpred krize. Prav tako, lahko s pomočjo gibanja zasedenih mest opišemo gibanje zaposlenosti, saj zasedena delovna mesta pravzaprav predstavljajo število zaposljenih ljudi v posameznih dejavnostih. 
@@ -101,17 +99,18 @@ Nadaljujem z grafom, ki prikazuje število prostih mest v posameznem letu.Prav t
 g2
 ```
 
-Naslednja kategorija analize je delovno aktivno prebivalstvo. 
-Najprej sem se dotaknila 
-S pomočjo zemljevida Slovenije lahko vidimo porazdelitev povprečnih mesečnih plač glede na regije. Razberemo,da najvišja povprečna mesečna plača v Sloveniji je v Osrednjeslovenski regiji. To je seveda pričakovano, saj se tam nahaja glavno mesto Ljubljana, ki je središče države. Zanimivo je za se za Osrednjeslovensko regijo na drugem mestu nahaja Gorenjska. Sklepam, da na to vplivata večja turistična kraja, kot sta Bled in Kranjska Gora. 
 
-Spodnji zemljevid prikazuje povprečno mesečno plačo. 
+
+Najprej sem sem analizirala število delavno aktivnega prebivalstva glede na izobrazbo. Po pričakovanjih je seveda najmanjše število delovno aktivnih državljanov s nepopolno osnovnošolsko izobrazbo oz. brez izobrazbe. Kljub temu pa je bila ta številka leta 2008 zelo visoka (13.000).Do leta 2018 pa se je zmanjšala na 2.000 prebivalcev. Razlog je v tem, saj si je Evropska unija za reševanje problemov na trgu dela zastavila 4 cilje po imenom Strategija 2020. Eden od ukrepov je bil, da morajo države EU imeti manj kot 10 % mladih v starosti od 18 do 24 let, ki opustijo šolanje.Cilj je bil imeti vsaj 40 % oseb med 30. in 34. letom z visokošolsko izobrazbo.Slovenija je oba cilja močno presegla že leta 2014, kar je vidno tudi v podatkih pri prebivalcih brez izobrazbe ter s samo osnovnošolsko. Poleg tega je bila v tem času v Slovniji tudi kriza, ki je vplivala na znižanje delovno aktivnih. Brezposelnost se pojavi pri nizko in srednje kvalficirani delovni sili. Torej pri ljudeh z osnovnošolsko, nižjo ali srednjo izobrazbo,kar je vidno tudi v tabeli.Do danes je število zaposlenih z srednjo in visoko izobrazbo narastlo, kar je seveda dober signal za trg dela. 
+
+Delovno aktivno prebivalstvo sem analizirala tudi z vidika dejavnosti. V podatkih sem iskala vplive krize torej zmanjšanje zaposlenosti. V času recesije bilo odpuščanje najbolj opazno v sekundarnih dejavnostih, kot so pridelovalne dejavnosti oz. proizvodnja, gradbeništvo.Prav tako je v pridelovanih dejavnosti največ aktivnega prebivalstva zaposlenega, zato je vpliv brezposelnosti še večji.Veliko teh dejavnosti je v zasebnem sektorju, kjer je odpuščanje večje kot v javnem sektorju. Javni sektor v času krize ne odpušča. Stanje se je po krizi izboljšalo in smo bli leta 2018 oz. smo še zmeraj sedaj na boljšem kot pred krizo. 
+
+Pomemben del trga dela so tudi plače. Analizirala sem povprečne mesečne neto plače po dejavnostih ter po regijah Slovenije. S pomočjo zemljevida Slovenije lahko vidimo porazdelitev povprečnih mesečnih plač glede na regije. Najvišja povprečna mesečna plača je v Osrednjeslovenski regiji. V Sloveniji je imamo proces centralizacije v Ljubljano in zato so tam najvišje plače. Iz podatkov o povprečih mesečnih plačah po dejavnosti razberemo, da so najnižje plače v primarnih dejavnostih. Pri nas te prevladujejo Pomurkski regiji, kar je tudi vidno na zemljevidu. Vidne vplive krize v podatkih o plačah nisem zaznala. Plače so se v zadnjem desetljetju na vseh področjih zvišale. 
 
 ```{r z1, echo=FALSE, message=FALSE, warning=FALSE}
  z1
 ```
 
-Iz podatkov o povprečnih mesečnih plačah pri registriranih fizičnih osebah po dejavnostih sem ugotovila naslednje. Iz računala sem povprečne mesečne plače v zadnjih 10 letih.V povprečju so najvišje mesečne plače skozi zadnje destletje v zdravstvu in socialnemu varstvu. 
 
 
 ***
