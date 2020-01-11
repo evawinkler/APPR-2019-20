@@ -19,9 +19,9 @@ zasedena.mesta$leto <- parse_integer(zasedena.mesta$leto)
 
 mesta <- full_join(prosta.mesta,zasedena.mesta)
 
-vsota.zasedena <- zasedena.mesta %>% group_by(leto) %>% summarise(vsota=sum(zasedena))
+vsota.zasedena <- zasedena.mesta %>% group_by(leto) %>% summarise(stevilo=sum(zasedena))
 
-vsota.prosta <- prosta.mesta %>% group_by(leto) %>% summarise(vsota=sum(prosta))
+vsota.prosta <- prosta.mesta %>% group_by(leto) %>% summarise(stevilo=sum(prosta))
 
 
 
@@ -72,7 +72,7 @@ PLACEPOREGIJAH <- read_xlsx("podatki/placeporegijah2.xlsx", col_names=c( "regije
 placeporegijah <- gather(PLACEPOREGIJAH, -regije, key=leto, value = stevilo , na.rm = TRUE)
 placeporegijah$leto <- parse_integer(placeporegijah$leto)
 
-povprecje.regije <- placeporegijah %>% group_by(regije) %>% summarise(povprecje=sum(stevilo)/(11))
+povprecje.regije <- placeporegijah %>% group_by(regije) %>% summarise(Povprecje=sum(stevilo)/(11))
 
 
 zemljevid <- uvozi.zemljevid("https://biogeo.ucdavis.edu/data/gadm3.6/shp/gadm36_SVN_shp.zip", "gadm36_SVN_1", encoding = "UTF-8")
