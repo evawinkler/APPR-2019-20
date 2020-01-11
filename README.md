@@ -7,22 +7,21 @@ Repozitorij z gradivi pri predmetu APPR v študijskem letu 2019/20
 
 ## Analiza trga dela v Sloveniji
 
-V projektni nalogi bom analizira trg dela v Sloveniji s pomočjo dejavnikov, ki vplivajo nanj. Osredotočila se bom na obdobje od leta 2008 do leta 2018. Analizirala bom delovno aktivno prebivalstvo, brezposelno prebivalstvo ter prosta mesta. V nadaljevanju pa se dotaknila še plač. Cilj naloge je predstaviti stanje na trgu dela v zadnjem desetletju. Podatke bom poiskala na Statističnem uradu Republike Slovenije ter na Eurostatu. 
+V projektni nalogi bom analizira trg dela v Sloveniji s pomočjo dejavnikov, ki vplivajo nanj. Osredotočila se bom na obdobje od leta 2008 do leta 2018. Analizirala bom delovno aktivno prebivalstvo in  prosta mesta. V nadaljevanju pa se dotaknila še plač. Cilj naloge je predstaviti stanje na trgu dela v zadnjem desetletju. Podatke bom poiskala na Statističnem uradu Republike Slovenije ter na Eurostatu. 
 
-Najprej bom analizirala prosta delovna mesta glede na dejavnosti ter delovno aktivno prebivalstvo glede na dejavnosti, saj se temi povezujeta. Tako bom dobila povezavo med dejavnostimi, ki imajo malo prostih mest ter veliko delovno aktivnih. Podatke bom primerjala še z mesečnimi plačami na dejavnost. Poslednično bom dobila pregled dejavnosti v Sloveniji, v katerih je prebivalstvo v  večini zaposleno in se vprašala o razlogih kot so npr. plače. 
-V nadaljevanju bom dodala še pregled aktivnega prebivalstva ( koliko jih je zaposlenih in brezposlenih) in  pregled neaktivnega prebivalstva glede na razloge ne dela. 
+Najprej bom analizirala prosta in zasedena delovna mesta glede na dejavnosti. Nadaljevala bom z analizo delovno aktivnega prebivalstva. Osredotočila se bom na dejavnosti ter primerjala zaposlenost glede na doseženo izobrazbo. Kot sem omenila, se bom osredotočila na obdobje od leta 2008 do 2018.Predvsem me zanima dogajanja v času krize, saj ima ta velik vpliv na trg dela. Predpostavljam, da bo vpliv krize zelo viden v podatkih. Za zaključek bom dodala tudi analizo plač. Primerjala bom povprečne mesečne plače glede na regije in jih pojasnjevala s pomočjo plač glede na dejavnosti. 
 
 1. tabela: Prosta in zasedena delovna mesta glede na dejavnosti  v Sloveniji
 Podatki so v obliki CSV. 
 https://pxweb.stat.si/SiStatDb/pxweb/sl/10_Dem_soc/10_Dem_soc__07_trg_dela__30_07146_prosta_mesta/0714611S.px/
 
-2. tabela : Delovno aktivno prebivalstvo glede na dejavnosti 
+2. tabela : Delovno aktivni po stopnjah dosežene izobrazbe
 Podatki so v obliki CSV. 
-https://pxweb.stat.si/SiStatDb/pxweb/sl/10_Dem_soc/10_Dem_soc__07_trg_dela__06_akt_preb_reg_viri_strukturni__10_07754_dejavnost/0775401S.px/ 
+https://pxweb.stat.si/SiStatDb/pxweb/sl/10_Dem_soc/10_Dem_soc__07_trg_dela__02_07008_akt_preb_po_anketi__02_07621_akt_preb_ADS_letno/0762104S.px/
 
-3. tabela : Prebivalci glede na aktivnost (aktivni, neaktivni, brezposelni), po spolu in kohezijskih regijah (Vzhodna in Zahodna Slovenija)  
+3. tabela : Delovno aktivni po področjih dejavnosti
 Podatki so v obliki CSV. 
-https://pxweb.stat.si/SiStatDb/pxweb/sl/10_Dem_soc/10_Dem_soc__07_trg_dela__02_07008_akt_preb_po_anketi__01_07620_akt_preb_ADS_cetrt/0762001S.px/
+https://pxweb.stat.si/SiStatDb/pxweb/sl/10_Dem_soc/10_Dem_soc__07_trg_dela__02_07008_akt_preb_po_anketi__02_07621_akt_preb_ADS_letno/0762105S.px/
 
 4. tabela : Povprečne mesečne plače  pri registriranih fizičnih osebah po dejavnostih
 Podatki so v obliki XLSX. 
