@@ -16,8 +16,11 @@
 
 z1 <- tm_shape(merge(zemljevid, povprecje.regije, by.x="NAME_1", by.y="regije" ))+ tm_polygons("povprecje") 
 
+g1 <- ggplot(data = vsota.zasedena,aes(x=leto, y=vsota)) + geom_line(col="blue")+ ggtitle("Število zasedenih mest v zadnjem destletju")
+g2 <- ggplot(data = vsota.prosta,aes(x=leto, y=vsota)) + geom_point(col="green")+ ggtitle("Število prostih mest v zadnjem destletju")
 
-g1 <- ggplot(data = vsota.zasedena,aes(x=leto, y=vsota)) + geom_line()+ ggtitle("Število zasedenih mest v zadnjem destletju")
-g2 <- ggplot(data = vsota.prosta,aes(x=leto, y=vsota)) + geom_point()+ ggtitle("Število prostih mest v zadnjem destletju")
+
+g3 <- ggplot(izobrazba %>% filter(izobrazba == "Brez izobrazbe, nepopolna osnovnošolska"))+ aes(x = leto, y = stevilo)  + geom_line(col="red") + ggtitle("Število aktivnega prebivalstva brez izobrazbe")
 
 
+g4 <- ggplot(dejavnosti %>% filter(dejavnosti == "Predelovalne dejavnosti")) + aes( x = leto , y = stevilo) + geom_point() + ggtitle("Gibanje števila zaposlenih v pridelovalnih dejavnostih")
