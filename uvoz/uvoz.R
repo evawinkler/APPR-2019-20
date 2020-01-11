@@ -48,6 +48,8 @@ IZOBRAZBA <- read_csv2("podatki/izobrazbaaktivnost.csv", col_names=c("regija","s
 izobrazba <- gather(IZOBRAZBA, -izobrazba, key=leto, value = stevilo, na.rm = TRUE)
 izobrazba$leto <- parse_integer(izobrazba$leto)
 
+
+
 #PLAČE PO DEJAVNOSTI 
 
 PLACEPODEJAVNOSTIH <- read_xlsx("podatki/placepodejavnostih1.xlsx",col_names=c("dejavnosti", 2008:2018),
