@@ -80,3 +80,27 @@ zemljevid <- uvozi.zemljevid("https://biogeo.ucdavis.edu/data/gadm3.6/shp/gadm36
 
 
 names(zemljevid)
+
+
+
+
+
+#uvoz iz html 
+
+link <- "https://en.wikipedia.org/wiki/Economy_of_Slovenia"
+stran <- html_session(link) %>% read_html()
+tabela <- stran %>% html_nodes(xpath="//table[@class='wikitable sortable']") %>%
+  .[[1]] %>% html_table(dec=".")
+
+colnames(tabela) <- c("leto", "1993", "1995", "2000", 2005 : 2017)
+
+
+for (col in c( "1993", "1995", "2000", 2005 : 2017)) {
+  tabela[[col]] <- parse_number(tabela[[col]], na="-", locale=sl)
+}
+
+for (col in c("leto")) {
+  tabela[[col]] <- factor(tabela[[col]])
+}
+
+  
