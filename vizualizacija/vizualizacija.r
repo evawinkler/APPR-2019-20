@@ -16,10 +16,19 @@
 
 z1 <- tm_shape(merge(zemljevid, povprecje.regije, by.x="NAME_1", by.y="regije" )) + tm_polygons("Povprecje",title="Povprečje") + tm_layout(title="Povprečna mesečna plača glede na regijo")
 
-g1 <- ggplot(data = vsota.zasedena,aes(x=leto, y=stevilo)) + geom_line(col="blue")+ ggtitle("Število zasedenih mest v zadnjem destletju")
-g2 <- ggplot(data = vsota.prosta,aes(x=leto, y=stevilo)) + geom_point(col="green")+ ggtitle("Število prostih mest v zadnjem destletju")
+g <- ggplot() + aes(x=leto, y=vsota, color=tip) + facet_grid(tip ~ ., scales="free_y") +
+  geom_line(data=mesta.vsote %>% filter(tip == "zasedena")) +
+  geom_point(data=mesta.vsote %>% filter(tip == "prosta")) + 
+  scale_x_continuous(breaks=seq(2008, 2018, 2)) +
+  scale_y_continuous(labels=comma_format(big.mark="")) +
+  guides(color=FALSE) + ggtitle("Število prostih in zasedenih delovnih mest ")
+
+g3 <- ggplot(izobrazba %>% filter(izobrazba == "Brez izobrazbe, nepopolna osnovnošolska"))+ aes(x = leto, y = stevilo)  + geom_line(col="red") + ggtitle("Število aktivnega prebivalstva brez izobrazbe v 1000")
+
+g4 <- ggplot(dejavnosti %>% filter(dejavnosti == "Predelovalne dejavnosti"))+ aes(x = leto, y = stevilo)  + geom_line(col="green") + ggtitle("Gibanje števila zaposlenih v pridelovalnih dejavnostih v 1000")
 
 
-g3 <- ggplot(izobrazba %>% filter(izobrazba == "Brez izobrazbe, nepopolna osnovnošolska"))+ aes(x = leto, y = stevilo)  + geom_line(col="red") + ggtitle("Število aktivnega prebivalstva brez izobrazbe")
+
+
 
 
