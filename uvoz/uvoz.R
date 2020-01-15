@@ -89,7 +89,7 @@ names(zemljevid)
 
 link <- "https://en.wikipedia.org/wiki/Economy_of_Slovenia"
 stran <- html_session(link) %>% read_html()
-tabela <- stran %>% html_nodes(xpath="//table[@class='wikitable sortable']") %>%
+tabela <- stran %>% html_nodes(xpath="//table[@class='wikitable']") %>%
   .[[1]] %>% html_table(dec=".")
 
 colnames(tabela) <- c("leto", "1993", "1995", "2000", 2005 : 2017)
@@ -103,4 +103,4 @@ for (col in c("leto")) {
   tabela[[col]] <- factor(tabela[[col]])
 }
 
-  
+
