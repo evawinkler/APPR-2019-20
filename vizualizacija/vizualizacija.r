@@ -25,7 +25,7 @@ g <- ggplot() + aes(x=leto, y=vsota, color=tip) + facet_grid(tip ~ ., scales="fr
 
 g3 <- ggplot(izobrazba %>% filter(izobrazba == "Brez izobrazbe, nepopolna osnovnošolska"))+ aes(x = leto, y = stevilo)  + geom_line(col="red") + ggtitle("Število aktivnega prebivalstva brez izobrazbe v 1000")
 
-g4 <- ggplot(dejavnosti %>% filter(dejavnosti == "Predelovalne dejavnosti"))+ aes(x = leto, y = stevilo)  + geom_point(col="green") + ggtitle("Gibanje števila zaposlenih v pridelovalnih dejavnostih v 1000")
+g4 <- ggplot(dejavnosti %>% filter(dejavnosti == "Predelovalne dejavnosti"))+ aes(x = leto, y = stevilo)  + geom_line(col="green") + ggtitle("Gibanje števila zaposlenih v pridelovalnih dejavnostih v 1000")
 
 g5 <- ggplot(tabelahtml %>% filter(spremenljivke == "Unemployment rate(in Percent)")) + aes(x = leto, y = stevilo)  + geom_point() +  ggtitle("Rast brezposelnosti v % ")  +  theme(axis.text.x=element_text(angle=90, vjust=0.5, hjust=1))  
 
