@@ -37,7 +37,7 @@ V projektni nalogi bom analizira trg dela v Sloveniji s pomočjo dejavnikov, ki 
 source("uvoz/uvoz.R", encoding="UTF-8")
 ```
 
-V tej fazi obdelave podatkov, sem uvozila tabele v CSV in XLSX obliki. Podatke imam v 5 razpredelnicah, v *tidy data* obliki. 
+V tej fazi obdelave podatkov, sem uvozila tabele v CSV, XLSX in HTML obliki. Podatke imam v 6 razpredelnicah, v *tidy data* obliki. 
 
 1.  DELOVNA MESTA V SLOVENIJI GLEDE NA DEJAVNOSTI 
 
@@ -70,6 +70,12 @@ V tej fazi obdelave podatkov, sem uvozila tabele v CSV in XLSX obliki. Podatke i
   - `regije` - spremenljivka : regije v Sloveniji (besedilo)
   - `povprečna mesečna plača` - meritev : povprečna neto plača glede na leto in regijo  (v €) (število)
   
+6. EKONOMIJA V SLOVENIJI 
+  - `leto` - leto v katerem so bile meritve opravljene (število)
+  - `spremenljivke` - spremenljivke : različne spremenljivke v ekonomomiji, kot so BDP,  brezposelnost, inflacija itd.
+  - `ekonomija v Sloveniji skozi različne spremenljivke` - meritev : spreminjanje BDP(v milijonih), spreminjanje/rast brezposelnosti in inflacije (v % ) (število)
+  
+
 ***
 
 # Analiza in vizualizacija podatkov

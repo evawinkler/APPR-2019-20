@@ -31,6 +31,9 @@ https://pxweb.stat.si/SiStatDb/pxweb/sl/10_Dem_soc/10_Dem_soc__07_trg_dela__10_p
 Podatki so v obliki XLSX.
 https://pxweb.stat.si/SiStatDb/pxweb/sl/10_Dem_soc/10_Dem_soc__07_trg_dela__10_place__02_07726_kaz_place/0772610S.px/
 
+6.tabela: Ekonomija v Sloveniji 
+Podatko so v obliki HTML. 
+https://en.wikipedia.org/wiki/Economy_of_Slovenia 
 
 ## Program
 
