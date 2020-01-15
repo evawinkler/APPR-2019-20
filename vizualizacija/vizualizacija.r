@@ -23,4 +23,3 @@ g2 <- ggplot(data = vsota.prosta,aes(x=leto, y=stevilo)) + geom_point(col="green
 g3 <- ggplot(izobrazba %>% filter(izobrazba == "Brez izobrazbe, nepopolna osnovnošolska"))+ aes(x = leto, y = stevilo)  + geom_line(col="red") + ggtitle("Število aktivnega prebivalstva brez izobrazbe")
 
 
-g4 <- ggplot(dejavnosti %>% filter(dejavnosti == "Predelovalne dejavnosti")) + aes( x = leto , y = stevilo) + geom_point() + ggtitle("Gibanje števila zaposlenih v pridelovalnih dejavnostih")
