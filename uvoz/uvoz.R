@@ -17,12 +17,13 @@ zasedena.mesta$leto <- parse_integer(zasedena.mesta$leto)
 
 
 
-mesta <- full_join(prosta.mesta,zasedena.mesta)
 
-vsota.zasedena <- zasedena.mesta %>% group_by(leto) %>% summarise(stevilo=sum(zasedena))
+# za skupen graf 
+mesta <- full_join(prosta.mesta, zasedena.mesta) %>%
+  gather(key=tip, value=stevilo, prosta, zasedena) 
 
-vsota.prosta <- prosta.mesta %>% group_by(leto) %>% summarise(stevilo=sum(prosta))
-
+mesta.vsote <- mesta %>% group_by(leto, tip) %>%
+  summarise(vsota=sum(stevilo, na.rm=TRUE)) 
 
 
 
@@ -92,16 +93,24 @@ stran <- html_session(link) %>% read_html()
 tabela <- stran %>% html_nodes(xpath="//table[@class='wikitable']") %>%
   .[[1]] %>% html_table(dec=".")
 
-colnames(tabela) <- c("leto", "1993", "1995", "2000", 2005 : 2017)
+colnames(tabela) <- c( "spremenljivke", "1993", "1995", "2000", 2005 : 2017)
 
+tabela[] <- lapply(tabela, gsub, pattern="%", replacement="")
+tabela[] <- lapply(tabela, gsub, pattern="−", replacement="-")
+tabela[] <- lapply(tabela, gsub, pattern=",", replacement="")
 
 for (col in c( "1993", "1995", "2000", 2005 : 2017)) {
-  tabela[[col]] <- parse_number(tabela[[col]], na="-", locale=sl)
+  tabela[[col]] <- parse_number(tabela[[col]], na="...")
 }
 
-for (col in c("leto")) {
-  tabela[[col]] <- factor(tabela[[col]])
-}
+tabela[1,1] <- "GDP in €(PPP) v milijardah" 
+
+
+
+tabelahtml <- gather(tabela, -spremenljivke, key=leto, value = stevilo , na.rm = TRUE)
+
+
+
 
 
 
