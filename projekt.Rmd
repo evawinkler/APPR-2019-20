@@ -107,12 +107,12 @@ Najprej sem sem analizirala število delavno aktivnega prebivalstva glede na izo
 g3
 ```
 
+Gibanje rasti brezposlenosti v Sloveniji je prikazano v spodnjem grafu. 
 
-Delovno aktivno prebivalstvo sem analizirala tudi z vidika dejavnosti.V času recesije bilo odpuščanje najbolj opazno v sekundarnih dejavnostih, kot so pridelovalne dejavnosti oz. proizvodnja, gradbeništvo.V ta namen sem naredila graf, saj je najbolj opazna sprememba. Prav tako je v pridelovanih dejavnosti največ aktivnega prebivalstva zaposlenega, zato je vpliv brezposelnosti še večji.Veliko teh dejavnosti je v zasebnem sektorju, kjer je odpuščanje večje kot v javnem sektorju. Javni sektor v času krize ne odpušča. Stanje se je po krizi izboljšalo in smo bli leta 2018 oz. smo še zmeraj sedaj na boljšem kot pred krizo. 
-
-```{r g4, echo=FALSE, message=FALSE, warning=FALSE,fig.align='center', fig.cap='Gibanje števila zaposlenih v pridelovalnih dejavnostih v 1000'}
-g4
+```{r g5, echo=FALSE, message=FALSE, warning=FALSE, fig.align='center', fig.cap='Rast brezposlenosti v %'}
+g5
 ```
+
 
 Pomemben del trga dela so tudi plače. S pomočjo zemljevida Slovenije lahko vidimo porazdelitev povprečnih mesečnih plač glede na regije v zadnjih 10 letih. Najvišja povprečna mesečna plača je v Osrednjeslovenski regiji. V Sloveniji je imamo proces centralizacije v Ljubljano in zato so tam najvišje plače. Iz podatkov o povprečih mesečnih plačah po dejavnosti razberemo, da so najnižje plače v primarnih dejavnostih. Pri nas te prevladujejo Pomurkski regiji, kar je tudi vidno na zemljevidu. Vidne vplive krize v podatkih o plačah nisem zaznala. Plače so se v zadnjem desetljetju na vseh področjih zvišale. 
 
