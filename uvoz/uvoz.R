@@ -17,7 +17,6 @@ zasedena.mesta$leto <- parse_integer(zasedena.mesta$leto)
 
 
 
-
 # za skupen graf 
 mesta <- full_join(prosta.mesta, zasedena.mesta) %>%
   gather(key=tip, value=stevilo, prosta, zasedena) 
