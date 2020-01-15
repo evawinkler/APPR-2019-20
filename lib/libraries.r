@@ -11,4 +11,5 @@ source("https://raw.githubusercontent.com/jaanos/APPR-2019-20/master/lib/uvozi.z
 library(ggplot2)
 library(dplyr)
 library(readr)
+library(scales)    
 
