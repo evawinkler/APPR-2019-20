@@ -116,7 +116,7 @@ g5
 
 Pomemben del trga dela so tudi plače. S pomočjo zemljevida Slovenije lahko vidimo porazdelitev povprečnih mesečnih plač glede na regije v zadnjih 10 letih. Najvišja povprečna mesečna plača je v Osrednjeslovenski regiji. V Sloveniji je imamo proces centralizacije v Ljubljano in zato so tam najvišje plače. Iz podatkov o povprečih mesečnih plačah po dejavnosti razberemo, da so najnižje plače v primarnih dejavnostih. Pri nas te prevladujejo Pomurkski regiji, kar je tudi vidno na zemljevidu. Vidne vplive krize v podatkih o plačah nisem zaznala. Plače so se v zadnjem desetljetju na vseh področjih zvišale. 
 
-```{r z1, echo=FALSE, message=FALSE, warning=FALSE,fig.align='center', fig.cap='Zemljevid povprečne mesečne plače'}
+```{r z1, echo=FALSE, message=FALSE, warning=FALSE,fig.align='center', fig.cap='Zemljevid povprečnih neto mesečnih plač po regijah v Sloveniji, leta 2018'}
  z1
 ```
 
