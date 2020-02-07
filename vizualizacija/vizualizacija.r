@@ -32,4 +32,5 @@ g5 <- ggplot(tabelahtml %>% filter(spremenljivke == "Unemployment rate(in Percen
 
 g6pomurska <- ggplot(placeporegijah %>% filter(regije == "Pomurska")) + aes( x = leto, y = stevilo) + geom_line() + geom_smooth(method = "loess")
 
-g6osrednjeslovenska <- ggplot(placeporegijah %>% filter(regije == "Osrednjeslovenska")) + aes( x = leto, y = stevilo) + geom_line()
+g6osrednjeslovenska <- ggplot(placeporegijah %>% filter(regije == "Osrednjeslovenska")) + aes( x = leto, y = stevilo) + geom_point() 
+
