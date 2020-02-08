@@ -114,7 +114,7 @@ g5
 ```
 
 
-Pomemben del trga dela so tudi plače. S pomočjo zemljevida Slovenije lahko vidimo porazdelitev povprečnih mesečnih plač glede na regije v zadnjih 10 letih. Najvišja povprečna mesečna plača je v Osrednjeslovenski regiji. V Sloveniji je imamo proces centralizacije v Ljubljano in zato so tam najvišje plače. Iz podatkov o povprečih mesečnih plačah po dejavnosti razberemo, da so najnižje plače v primarnih dejavnostih. Pri nas te prevladujejo Pomurkski regiji, kar je tudi vidno na zemljevidu. Vidne vplive krize v podatkih o plačah nisem zaznala. Plače so se v zadnjem desetljetju na vseh področjih zvišale. 
+Pomemben del trga dela so tudi plače. S pomočjo zemljevida Slovenije lahko vidimo porazdelitev povprečnih mesečnih plač glede na regije v zadnjih 10 letih. Najvišja povprečna mesečna plača je v osrednjeslovenski regiji. V Sloveniji je imamo proces centralizacije v Ljubljano in zato so tam najvišje plače. Iz podatkov o povprečih mesečnih plačah po dejavnosti razberemo, da so najnižje plače v primarnih dejavnostih. Pri nas te prevladujejo pomurkski regiji, kar je tudi vidno na zemljevidu. Vidne vplive krize v podatkih o plačah nisem zaznala. Plače so se v zadnjem desetljetju na vseh področjih zvišale. 
 
 ```{r z1, echo=FALSE, message=FALSE, warning=FALSE,fig.align='center', fig.cap='Zemljevid povprečnih neto mesečnih plač po regijah v Sloveniji, leta 2018'}
  z1
@@ -126,5 +126,20 @@ Pomemben del trga dela so tudi plače. S pomočjo zemljevida Slovenije lahko vid
 
 # Napredna analiza podatkov
 
+Za napredno analizo podatkov sem naredila napoved rasti mesečnih neto plač. Izbrala sem si dve slovenski regiji. 
 
+Najprej sem naredila napoved za pomursko regijo. Izbrala sem si jo, saj je mesečna plača v zadnjem desetletju najbolj vidno narastla. Razlog se nahaja v regionalnem razvojnem programu za Pomurje za obodobje 2014-2020, s katerim so želeli narediti regijo primerljivo drugim. Glede na podatke in napovedi, menim da se je cilj uresničil.
+
+```{r graf.napoved, echo=FALSE, message=FALSE, warning=FALSE, fig.align='center', fig.cap='Napoved rasti mesečnih neto plač v Pomurju do leta 2022'}
+graf.napoved
+```
+
+Za primerjevo sem izbrala še osrednjeslovensko regijo, ki je najbolj razvita regija v državi in ima najvišje mesečne plače. Glede na spodnji graf lahko vidimo, da so plače zrasle, a je sprememba rasti manjša kot v Pomurju. 
+
+```{r graf.napoved1, echo=FALSE, message=FALSE, warning=FALSE, fig.align='center', fig.cap='Napoved rasti plač v osrednjeslovenski regiji do leta 2022'}
+graf.napoved1
+```
+***
+
+# Zaključek 
 ***
