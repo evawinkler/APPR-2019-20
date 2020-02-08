@@ -1,5 +1,5 @@
 ---
-title: "Poročilo pri predmetu Analiza podatkov s programom R"
+title: "Analiza trga dela v Sloveniji"
 author: "Eva Winkler"
 output:
   html_document: default
@@ -23,7 +23,7 @@ source("lib/libraries.r", encoding="UTF-8")
 source("lib/rstudio.r", encoding="UTF-8")
 ```
 
-# Analiza trga dela
+# Uvod
 
 V projektni nalogi bom analizira trg dela v Sloveniji s pomočjo dejavnikov, ki vplivajo nanj. Osredotočila se bom na obdobje od leta 2008 do leta 2018. Analizirala bom delovno aktivno prebivalstvo in  prosta mesta. V nadaljevanju pa se dotaknila še plač. Cilj naloge je predstaviti stanje na trgu dela v zadnjem desetletju. Podatke bom poiskala na Statističnem uradu Republike Slovenije. 
 
@@ -39,40 +39,41 @@ source("uvoz/uvoz.R", encoding="UTF-8")
 
 V tej fazi obdelave podatkov, sem uvozila tabele v CSV, XLSX in HTML obliki. Podatke imam v 6 razpredelnicah, v *tidy data* obliki. 
 
-1.  DELOVNA MESTA V SLOVENIJI GLEDE NA DEJAVNOSTI 
+1. $\color{BLACK}{\text{DELOVNA MESTA V SLOVENIJI GLEDE NA DEJAVNOSTI }}$ 
 
   - `leto` - leto v katerem so bile meritve opravljene (število)
   - `dejavnost` - spremenljivka : dejavnosti (besedilo)
   - `prosta` - meritev : prosta mesta glede na leto in dejavnost  (število)
   - `zasedena` - meritev : zasedena mesta glede na leto in dejavnost  (število)
   
-2. DELAVNO AKTIVNO PREBIVALSTVO PO PODROČJIH DEJAVNOSTI
+2. $\color{BLACK}{\text{DELAVNO AKTIVNO PREBIVALSTVO PO DEJAVNOSTIH}}$
 
   - `leto` - leto v katerem so bile meritve opravljene (število)
   - `dejavnost` - spremenljivka : dejavnosti (besedilo)
   - `delovno aktivno prebivalstvo` - meritev : število delovno aktivnega prebivalstva glede na leto in dejavnost, v tisočih (število)
   
-3. DELAVNO AKTIVNO PREBIVALSTVO GLEDE NA STOPNJO DOSEŽENE IZOBRAZBE
+3.  $\color{BLACK}{\text{DELAVNO AKTIVNO PREBIVALSTVO GLEDE NA STOPNJO DOSEŽENE IZOBRAZBE}}$
 
   - `leto` - leto v katerem so bile meritve opravljene (število)
   - `izobrazba` - spremenljivka : izobrazba prebivalcev (besedilo)
   - `delovno aktivno prebivalstvo` - meritev : število delovno aktivnega prebivalstva glede na leto in izobrazbo, v tisočih (število)
   
-4. POVPREČNE MESEČNE PLAČE PO DEJAVNOSTIH 
+4. $\color{BLACK}{\text{POVPREČNE MESEČNE PLAČE PO DEJAVNOSTIH }}$
 
   - `leto` - leto v katerem so bile meritve opravljene (število)
   - `dejavnost` - spremenljivka : dejavnosti (besedilo)
   - `povprečna mesečna plača` - meritev : povprečna neto plača glede na leto in dejavnost (v €) (število)
   
-5. POVPREČNE MESEČNE PLAČE PO REGIJAH 
+5. $\color{BLACK}{\text{POVPREČNE MESEČNE PLAČE PO REGIJAH}}$ 
 
  - `leto` - leto v katerem so bile meritve opravljene (število)
   - `regije` - spremenljivka : regije v Sloveniji (besedilo)
   - `povprečna mesečna plača` - meritev : povprečna neto plača glede na leto in regijo  (v €) (število)
   
-6. EKONOMIJA V SLOVENIJI 
+6. $\color{BLACK}{\text{EKONOMIJA V SLOVENIJI}}$
+
   - `leto` - leto v katerem so bile meritve opravljene (število)
-  - `spremenljivke` - spremenljivke : različne spremenljivke v ekonomomiji, kot so BDP,  brezposelnost, inflacija itd.
+  - `spremeljivke` - sprmenljivka :različne spremenljivke v ekonomomiji, kot so BDP,  brezposelnost, inflacija itd.
   - `ekonomija v Sloveniji skozi različne spremenljivke` - meritev : spreminjanje BDP(v milijonih), spreminjanje/rast brezposelnosti in inflacije (v % ) (število)
   
 
@@ -116,7 +117,7 @@ g5
 
 Pomemben del trga dela so tudi plače. S pomočjo zemljevida Slovenije lahko vidimo porazdelitev povprečnih mesečnih plač glede na regije v zadnjih 10 letih. Najvišja povprečna mesečna plača je v osrednjeslovenski regiji. V Sloveniji je imamo proces centralizacije v Ljubljano in zato so tam najvišje plače. Iz podatkov o povprečih mesečnih plačah po dejavnosti razberemo, da so najnižje plače v primarnih dejavnostih. Pri nas te prevladujejo pomurkski regiji, kar je tudi vidno na zemljevidu. Vidne vplive krize v podatkih o plačah nisem zaznala. Plače so se v zadnjem desetljetju na vseh področjih zvišale. 
 
-```{r z1, echo=FALSE, message=FALSE, warning=FALSE,fig.align='center', fig.cap='Zemljevid povprečnih neto mesečnih plač po regijah v Sloveniji, leta 2018'}
+```{r z1, echo=FALSE, message=FALSE, warning=FALSE,fig.align='center', fig.cap='Zemljevid povprečne neto mesečne plače po regijah v zadnjem destletju '}
  z1
 ```
 
@@ -142,4 +143,11 @@ graf.napoved1
 ***
 
 # Zaključek 
+
+Glede na analizirane podatke lahko odgovorim na zastavljeni vprašanji. 
+Ali so posledice krize vidne še danes?
+Ali je Slovenija že dosegla stanje izpred krize?
+
+Menim, da posledice krize iz leta 2008 niso več občutne pri nas. Prav tako je trg dela dosegel stanje izpred časa krize. S pomočjo podatkov sklepam, da se Slovenija trenutno nahaja v gospodarski rasti, kar je seveda dober signal za prihodnost. 
+
 ***
