@@ -1,20 +1,7 @@
 # 3. faza: Vizualizacija podatkov
 
-# Uvozimo zemljevid.
-#zemljevid <- uvozi.zemljevid("http://baza.fmf.uni-lj.si/OB.zip", "OB",
-#                             pot.zemljevida="OB", encoding="Windows-1250")
-#levels(zemljevid$OB_UIME) <- levels(zemljevid$OB_UIME) %>%
- # { gsub("Slovenskih", "Slov.", .) } %>% { gsub("-", " - ", .) }
-#zemljevid$OB_UIME <- factor(zemljevid$OB_UIME, levels=levels(obcine$obcina))
-#zemljevid <- fortify(zemljevid)
 
-# Izračunamo povprečno velikost družine
-#povprecja <- druzine %>% group_by(obcina) %>%
- # summarise(povprecje=sum(velikost.druzine * stevilo.druzin) / sum(stevilo.druzin))
-
- 
-
-z1 <- tm_shape(merge(zemljevid, povprecje.regije, by.x="NAME_1", by.y="regije" )) + tm_polygons("Povprecje",title="Povprečje v €") + tm_layout(title="Povprečna mesečna neto plača glede na regijo, Slovenija, 2018")
+z1 <- tm_shape(merge(zemljevid, povprecje.regije, by.x="NAME_1", by.y="regije" )) + tm_polygons("Povprecje",title="Povprečje v €") + tm_layout(title="Povprečna mesečna neto plača glede na regijo v zadnjem destletju")
 
 g <- ggplot() + aes(x=leto, y=vsota, color=tip) + facet_grid(tip ~ ., scales="free_y") +
   geom_line(data=mesta.vsote %>% filter(tip == "zasedena")) +
@@ -35,9 +22,9 @@ g5 <- ggplot(tabelahtml %>% filter(spremenljivke == "Unemployment rate(in Percen
 g6pomurska <- ggplot(placeporegijah %>% filter(regije == "Pomurska")) + 
   aes(x = leto, y = stevilo) + geom_point() + geom_smooth(method = "gam", se = FALSE)
 
-mgam <- gam(stevilo ~ leto , data = placeporegijah)
-leta <- data.frame(leto = seq(2019,2022))
-napoved <- leta %>% mutate(stevilo = predict(mgam, .))
+mgam1 <- gam(stevilo ~ leto , data = placeporegijah %>% filter(regije == "Pomurska"))
+leta1 <- data.frame(leto = seq(2019,2022))
+napoved <- leta1 %>% mutate(stevilo = predict(mgam1, .))
 
 tabela.napoved <- bind_rows(napoved, (placeporegijah %>%  filter(regije == "Pomurska"))[c(2,3)])
 
@@ -53,13 +40,13 @@ graf.napoved <- ggplot(tabela.napoved, aes(x = leto, y = stevilo)) +
 g6osrednjeslovenska <- ggplot(placeporegijah %>% filter(regije == "Osrednjeslovenska")) + 
   aes(x = leto, y = stevilo) + geom_point() + geom_smooth(method = "gam", se = FALSE)
 
-mgam1 <- gam(stevilo ~ leto , data = placeporegijah)
-leta1 <- data.frame(leto = seq(2019,2022))
-napoved <- leta1 %>% mutate(stevilo = predict(mgam1, .))
+mgam2 <- gam(stevilo ~ leto , data = placeporegijah %>% filter(regije == "Osrednjeslovenska"))
+leta2 <- data.frame(leto = seq(2019,2022))
+napoved1 <- leta2 %>% mutate(stevilo = predict(mgam2, .))
 
-tabela.napoved1 <- bind_rows(napoved, (placeporegijah %>%  filter(regije == "Osrednjeslovenska"))[c(2,3)])
+tabela.napoved1 <- bind_rows(napoved1, (placeporegijah %>%  filter(regije == "Osrednjeslovenska"))[c(2,3)])
 
 graf.napoved1 <- ggplot(tabela.napoved1, aes(x = leto, y = stevilo)) + 
   geom_point() + scale_x_continuous(name = "Leto", breaks = seq(2008,2022,1)) + ylab("Plača") +
   ggtitle("Povprečna mesečna neto plača v osrednjeslovenski regiji") +
-  geom_smooth(method = 'gam', formula = y ~ x, se = FALSE)
+  geom_smooth(method = 'gam', formula = y ~ x, se = FALSE) + theme(axis.text.x=element_text(angle=90, vjust=0.5, hjust=1))
