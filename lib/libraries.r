@@ -12,6 +12,9 @@ library(ggplot2)
 library(dplyr)
 library(readr)
 library(scales)    
-
+library(rgdal)
+library(rgeos)
+library(mosaic)
+library(maptools)
 library(mgcv)
 
