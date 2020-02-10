@@ -121,6 +121,10 @@ Pomemben del trga dela so tudi plače. S pomočjo zemljevida Slovenije lahko vid
 
 # Napredna analiza podatkov
 
+```{r analiza, echo=FALSE, message=FALSE, warning=FALSE, results='hide'}
+source("analiza/analiza.r", encoding="UTF-8")
+```
+
 Za napredno analizo podatkov sem naredila napoved rasti mesečnih neto plač. Izbrala sem si dve slovenski regiji. 
 
 Najprej sem naredila napoved za pomursko regijo. Izbrala sem si jo, saj je mesečna plača v zadnjem desetletju najbolj vidno narastla. Razlog se nahaja v regionalnem razvojnem programu za Pomurje za obodobje 2014-2020, s katerim so želeli narediti regijo primerljivo drugim. Glede na podatke in napovedi, menim da se je cilj uresničil.
