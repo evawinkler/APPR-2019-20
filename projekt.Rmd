@@ -135,7 +135,7 @@ graf.napoved
 
 Za primerjevo sem izbrala še osrednjeslovensko regijo, ki je najbolj razvita regija v državi in ima najvišje mesečne plače. Glede na spodnji graf lahko vidimo, da so plače zrasle, a je sprememba rasti manjša kot v Pomurju. 
 
-```{r graf.napoved1, echo=FALSE, message=FALSE, warning=FALSE, fig.align='center', fig.cap='Napoved rasti plač v osrednjeslovenski regiji do leta 2022'}
+```{r graf.napoved1, echo=FALSE, message=FALSE, warning=FALSE, fig.align='center', fig.cap='Napoved rasti mesečnih neto plač v osrednjeslovenski regiji do leta 2022'}
 graf.napoved1
 ```
 ***
