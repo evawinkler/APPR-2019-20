@@ -1,7 +1,7 @@
 # 3. faza: Vizualizacija podatkov
 
 
-z1 <- tm_shape(merge(zemljevid, povprecje.regije, by.x="NAME_1", by.y="regije" )) + tm_polygons("Povprecje",title="Povprečje v €") + tm_layout(title="Povprečna mesečna neto plača glede na regijo v zadnjem destletju")
+z1 <- tm_shape(merge(zemljevid, povprecje.regije, by.x="NAME_1", by.y="regije" )) + tm_polygons("Povprecje",title="Plače v €") + tm_layout(title="Povprečna mesečna neto plača glede na regijo v zadnjem destletju")
 
 g <- ggplot() + aes(x=leto, y=vsota, color=tip) + facet_grid(tip ~ ., scales="free_y") +
   geom_line(data=mesta.vsote %>% filter(tip == "zasedena")) +

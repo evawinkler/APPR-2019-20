@@ -52,7 +52,7 @@ uvozi.zemljevid <- function(url, ime.zemljevida, pot.zemljevida="",
                                         paste(c(x[1:(length(x)-1)], tolower(x[length(x)])),
                                               collapse="."))))
   zemljevid <- readOGR(shp, ime.zemljevida)
-
+  
   if (!is.null(encoding)) {
     loc <- locale(encoding=encoding)
     for (col in names(zemljevid)) {

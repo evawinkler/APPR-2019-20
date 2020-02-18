@@ -82,9 +82,6 @@ zemljevid <- uvozi.zemljevid("https://biogeo.ucdavis.edu/data/gadm3.6/shp/gadm36
 names(zemljevid)
 
 
-
-
-
 #uvoz iz html 
 
 link <- "https://en.wikipedia.org/wiki/Economy_of_Slovenia"

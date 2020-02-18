@@ -19,7 +19,7 @@ source("lib/rstudio.r", encoding="UTF-8")
 
 # Uvod
 
-V projektni nalogi bom analizira trg dela v Sloveniji s pomočjo dejavnikov, ki vplivajo nanj. Osredotočila se bom na obdobje od leta 2008 do leta 2018. Analizirala bom delovno aktivno prebivalstvo in  prosta mesta. V nadaljevanju pa se dotaknila še plač. Cilj naloge je predstaviti stanje na trgu dela v zadnjem desetletju. Podatke bom poiskala na [Statističnem uradu Republike Slovenije](https://pxweb.stat.si/SiStat). 
+V projektni nalogi bom analizira trg dela v Sloveniji s pomočjo dejavnikov, ki vplivajo nanj. Osredotočila se bom na obdobje od leta 2008 do leta 2018. Analizirala bom delovno aktivno prebivalstvo in  prosta mesta. V nadaljevanju pa se dotaknila še plač. Cilj naloge je predstaviti stanje na trgu dela v zadnjem desetletju. Podatke bom poiskala na [Statističnem uradu Republike Slovenije](https://pxweb.stat.si/SiStat) ter na internetu.
 
 ![](slike/trgdela.png)
 
@@ -67,8 +67,8 @@ V tej fazi obdelave podatkov, sem uvozila tabele v CSV, XLSX in HTML obliki. Pod
 6. $\color{BLACK}{\text{EKONOMIJA V SLOVENIJI}}$
 
   - `leto` - leto v katerem so bile meritve opravljene (število)
-  - `spremeljivke` - sprmenljivka :različne spremenljivke v ekonomomiji, kot so BDP,  brezposelnost, inflacija itd.
-  - `ekonomija v Sloveniji skozi različne spremenljivke` - meritev : spreminjanje BDP(v milijonih), spreminjanje/rast brezposelnosti in inflacije (v % ) (število)
+  - `spremeljivke` - spremenljivka : različne spremenljivke v ekonomomiji, kot so BDP,  brezposelnost, inflacija itd.(besedilo)
+  - `ekonomija v Sloveniji skozi različne spremenljivke` - meritev : spreminjanje BDP (v milijonih), spreminjanje/rast brezposelnosti in inflacije (v % ) (število)
   
 
 ***
@@ -85,7 +85,6 @@ Ali so posledice krize vidne še danes?
 Ali je Slovenija že dosegla stanje izpred krize?
 
 Osredotočila se bom na glavne kategorija trg dela. Te so prosta in zasedena delovna mesta, delovno aktivno prebivalstvo in plače.
-
 
 Spodnji graf prikazuje število zasedenih mest v posameznem letu od 2008 do 2018. V namen analize sem združila dejavnosti in seštela zasedena mesta za posamezna leta. Tako sem dobila število zasedenih mest v posameznem letu. Posledica krize je bila povečana brezposelnost. Torej število zasedenih delovnih mest je upadlo.Najnižje stanje je bilo leta 2014. Iz grafa razberemo, da se je stanje na trgu dela začelo izboljšavati po letu 2015. Kljub temu pa do leta 2018 nismo še dosegli števila zasedenih mest izpred krize.  
 Hkrati sem združila še graf, ki prikazuje število prostih mest v posameznem letu.Prav tako, je tudi tukaj viden vpliv krize. Pričakovali bi graf, ki bi bil nasproten prejšnemu, a ni tako. V času krize je število prostih mest nizko, saj delodajalci ne razpisujejo prostih delovnih mest in samo odpuščajo. Šele po letu 2014, ko se stanje izbolšuje, narašča tudi število prostih mest.
@@ -109,7 +108,7 @@ g5
 ```
 
 
-Pomemben del trga dela so tudi plače. S pomočjo zemljevida Slovenije lahko vidimo porazdelitev povprečnih mesečnih plač glede na regije v zadnjih 10 letih. Najvišja povprečna mesečna plača je v osrednjeslovenski regiji. V Sloveniji je imamo proces centralizacije v Ljubljano in zato so tam najvišje plače. Iz podatkov o povprečih mesečnih plačah po dejavnosti razberemo, da so najnižje plače v primarnih dejavnostih. Pri nas te prevladujejo pomurkski regiji, kar je tudi vidno na zemljevidu. Vidne vplive krize v podatkih o plačah nisem zaznala. Plače so se v zadnjem desetljetju na vseh področjih zvišale. 
+Pomemben del trga dela so tudi plače. S pomočjo zemljevida Slovenije lahko vidimo porazdelitev povprečnih neto mesečnih plač glede na regije v zadnjih 10 letih. Najvišja povprečna mesečna plača je v osrednjeslovenski regiji. V Sloveniji je imamo proces centralizacije v Ljubljano in zato so tam najvišje plače. Iz podatkov o povprečih mesečnih plačah po dejavnosti razberemo, da so najnižje plače v primarnih dejavnostih. Pri nas te prevladujejo pomurkski regiji, kar je tudi vidno na zemljevidu. Vidne vplive krize v podatkih o plačah nisem zaznala. Plače so se v zadnjem desetljetju na vseh področjih zvišale. 
 
 ```{r z1, echo=FALSE, message=FALSE, warning=FALSE,fig.align='center', fig.cap='Zemljevid povprečne neto mesečne plače po regijah v zadnjem destletju '}
  z1
@@ -142,9 +141,11 @@ graf.napoved1
 
 # Zaključek 
 
-Glede na analizirane podatke lahko odgovorim na zastavljeni vprašanji. 
-Ali so posledice krize vidne še danes?
-Ali je Slovenija že dosegla stanje izpred krize?
+Glede na analizirane podatke lahko odgovorim na zastavljeni vprašanji.
+
+- $\color{black}{\text{Ali so posledice krize vidne še danes?}}$
+- $\color{black}{\text{Ali je Slovenija že dosegla stanje izpred krize?}}$
+
 
 Menim, da posledice krize iz leta 2008 niso več občutne pri nas. Prav tako je trg dela dosegel stanje izpred časa krize. S pomočjo podatkov sklepam, da se Slovenija trenutno nahaja v gospodarski rasti, kar je seveda dober signal za prihodnost. 
 
