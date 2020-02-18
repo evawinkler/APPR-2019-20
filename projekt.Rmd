@@ -27,8 +27,8 @@ V projektni nalogi bom analizira trg dela v Sloveniji s pomočjo dejavnikov, ki 
 
 # Obdelava, uvoz in čiščenje podatkov
 
-```{r uvoz, echo=FALSE, message=FALSE, warning=FALSE}
-source("uvoz/uvoz.r", encoding="UTF-8")
+```{r uvoz, echo=FALSE, message=FALSE, warning=FALSE,results='hide'}
+source("uvoz/uvoz.R", encoding="UTF-8")
 ```
 
 V tej fazi obdelave podatkov, sem uvozila tabele v CSV, XLSX in HTML obliki. Podatke imam v 6 razpredelnicah, v *tidy data* obliki. 
